@@ -36,6 +36,10 @@ a:hover{
     color: var(--color-brand);
 }
 
+ul{
+    list-style: none;
+}
+
 img{
     width: 100%;
 }
@@ -106,6 +110,37 @@ img{
     font-size: 24px;
 }
 
+.under-construction{
+    display:flex;
+    margin: auto;
+    justify-content: center;
+}
+.under-construction>i{
+    font-size: 60px;
+    color: var(--color-heading);
+}
+
+.contact-items>li{
+    display:flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contact-items>li>a{
+    margin-left: 15px;
+}
+
+.contact-iconbox{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 64px;
+    background-color: var(--color-brand);
+    color: var(--color-base);
+}
+
+
 /* NAVBAR */
 .navbar{
     background-color: var(--color-base2);
@@ -140,6 +175,7 @@ img{
         background: linear-gradient(rgba(41, 11, 38, 0.2), rgba(82, 21, 76, 0.8)), url(../images/game-off-gif.gif);
         background-size: cover;
         background-position: 40%;
+        box-shadow: -5px 0px 30px 0px black;
     }
 
     .navbar-brand img{
