@@ -23,6 +23,7 @@ body{
 h1,h2,h3,h4,h5,h6{
     color: var(--color-heading);
     font-weight: 700;
+    text-shadow: 2px 2px #000000;
 }
 
 a{
@@ -43,6 +44,10 @@ img{
     color: var(--color-brand);
 }
 
+.bg-base{
+    background-color: var(--color-base)
+}
+
 .full-height{
     min-height: 100vh;
     height: 100%;
@@ -51,16 +56,60 @@ img{
     justify-content: center;
     padding-top: 80px;
     padding-bottom: 80px;
-    border-bottom: 2px solid rgba(255,255,255,0.1);
+}
+
+.section-separator{
+    margin:auto;
+    width: 60%;
+    border: 1px solid var(--color-brand);
+    border-style: solid;
+    opacity: .9;
 }
 
 .row{
     justify-content: center;
 }
 
+.shadow-effect{
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover{
+    box-shadow: -6px 6px 0 0px var(--color-brand);
+}
+
+.iconbox{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-size: 55px;
+    background-color: var(--color-brand);
+    color: var(--color-base);
+}
+
+.portfolio-bottom-box{
+    display: flex;
+    flex-direction: row;
+}
+
+.portfolio-bottom-box>a{
+    margin-right: auto;
+}
+
+.portfolio-bottom-box>ul{
+    margin: 0;
+}
+
+.portfolio-bottom-box>ul>i{
+    font-size: 24px;
+}
+
 /* NAVBAR */
 .navbar{
     background-color: var(--color-base2);
+    text-shadow: 2px 2px #000000;
 }
 
 .navbar .nav-link{
@@ -70,7 +119,11 @@ img{
 }
 
 .navbar .nav-link:hover{
-    color:var(--color-link);
+    color: var(--color-link);
+}
+
+.navbar .nav-link.active{
+    color: var(--color-link);
 }
 
 @media(min-width: 992px){

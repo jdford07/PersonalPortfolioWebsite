@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jd Ford SWE Portfolio</title>
+    <title>Jd Ford's SWE Portfolio</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/aos.css">
     <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
@@ -13,15 +13,14 @@
 
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
 
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container flex-lg-column">
             <a class="navbar-brand mx-lg-auto mb-lg-4" href="#">
                 <span class="h3 fw-bold d-block d-lg-none">Jd Ford</span>
-                <img src="./assets/images/phoenix_park_250.jpg" class="d-none d-lg-block rounded-circle"
-                    alt="Jd Ford Face">
+                <img src="./assets/images/phoenix_park_250.jpg" class="d-none d-lg-block rounded-circle" alt="Jd Ford">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,6 +36,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#consolidate">Consolidate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./assets/files/Ford_Resume2023.pdf" target="_blank">Resume</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#aboutme">About Me</a>
@@ -57,17 +59,17 @@
         <section id="home" class="full-height px-lg-5">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-lg-12">
                         <h1 class="display-3 fw-bold">I'm Jd, a <span class="text-brand">Software Engineer</span>
                             passionate about <i>automation</i></h1>
-                        <p class="lead mt-2 mb-4">I'm glad you're here! Don't hesitate to poke around. Feel free to
+                        <p class="lead mt-2">I'm glad you're here! Don't hesitate to poke around.</p>
+                        <p class="lead mt-2 mb-4">Feel free to
                             <a href=#portfolio class="link-custom">explore my portfolio</a> of personal projects, <a
                                 href="#consolidate" class="link-custom">
                                 play with Consolidate</a>, my web application, or <a href="#aboutme"
-                                class="link-custom"> learn more about
-                                me</a>!
+                                class="link-custom"> learn more about me</a>!
                         </p>
-                        <a href="./assets/files/Ford_Resume2023.pdf" class="btn btn-brand me-3" download="">Download My
+                        <a href="./assets/files/Ford_Resume2023.pdf" class="btn btn-brand me-3" target="_blank">View My
                             Resume</a>
                         <a href="#contact" class="link-custom">E-mail: jdford7@gmail.com</a>
                     </div>
@@ -76,17 +78,100 @@
         </section>
         <!-- HOME END -->
 
+        <hr class="section-separator rounded-circle">
+
         <!-- PORTFOLIO -->
-        <section id="portfolio" class="full-height px-lg-5"></section>
+        <section id="portfolio" class="full-height px-lg-5">
+            <div class="container">
+                <div class="row pb-4">
+                    <div class="col-lg-12">
+                        <h6 class="text-brand">PORTFOLIO</h6>
+                        <h1>My Portfolio of Personal Projects</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="portfolio p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-server"></i>
+                            </div>
+                            <h4 class="mt-4 mb-2">Secure Cloud File Storage</h4>
+                            <p>Unique server based encryption file storage solution</p>
+                            <div class="portfolio-bottom-box col-md-12">
+                                <a href="#" class="link-custom">Read More</a>
+                                <ul>
+                                    <i class="lab la-python" title="Python"></i>
+                                    <i class="lab la-ubuntu" title="Ubuntu"></i>
+                                    <i class="las la-user-secret" title="Encryption"></i>
+                                    <i class="portfolio-icon las la-cloud" title="Server based"></i>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="portfolio p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-laptop-code"></i>
+                            </div>
+                            <h4 class="mt-4 mb-2">Consolidate</h4>
+                            <p>Web application serving requested information from Twitch, Youtube and various news
+                                websites</p>
+                            <div class="portfolio-bottom-box col-md-12">
+                                <a href="#" class="link-custom">Read More</a>
+                                <ul>
+                                    <i class="lab la-python" title="Python"></i>
+                                    <i class="las la-flask" title="Flask"></i>
+                                    <i class="lab la-html5" title="HTML5"></i>
+                                    <i class="lab la-css3-alt" title="CSS3"></i>
+                                    <i class="lab la-docker" title="Docker"></i>
+                                    <i class="lab la-git" title="Git"></i>
+                                    <i class="lab la-aws" title="AWS"></i>
+                                    <i class="lab la-twitch" title="Twitch"></i>
+                                    <i class="lab la-youtube" title="Youtube"></i>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="portfolio p-4 bg-base rounded-4 shadow-effect">
+                            <div class="iconbox rounded-4">
+                                <i class="las la-cloud"></i>
+                            </div>
+                            <h4 class="mt-4 mb-2">DevOps Pipelines</h4>
+                            <p>Custom CI/CD Pipelines serving this website and the Consolidate WebApp</p>
+
+                            <div class="portfolio-bottom-box col-md-12">
+                                <a href="#" class="link-custom">Read More</a>
+                                <ul>
+                                    <i class="lab la-docker" title="Docker"></i>
+                                    <i class="lab la-jenkins" title="Jenkins"></i>
+                                    <i class="lab la-git" title="Git"></i>
+                                    <i class="lab la-github" title="GitHub"></i>
+                                    <i class="lab la-aws" title="AWS"></i>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
         <!-- PORTFOLIO END -->
+
+        <hr class="section-separator rounded-circle">
 
         <!-- CONSOLIDATE -->
         <section id="consolidate" class="full-height px-lg-5"></section>
         <!-- CONSOLIDATE END -->
 
+        <hr class="section-separator rounded-circle">
+
         <!-- ABOUT ME -->
         <section id="aboutme" class="full-height px-lg-5"></section>
         <!-- ABOUT ME END -->
+
+        <hr class="section-separator rounded-circle">
 
         <!-- CONTACT -->
         <section id="contact" class="full-height px-lg-5"></section>
