@@ -19,7 +19,7 @@ body{
     color: var(--color-body);
     font-family: var(--font-base), sans-serif;
     overflow-y: scroll;
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 h1,h2,h3,h4,h5,h6{
