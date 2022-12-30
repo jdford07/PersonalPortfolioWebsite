@@ -110,6 +110,13 @@ img{
     font-size: 24px;
 }
 
+.custom-tooltip {
+    --bs-tooltip-bg: rgb(17, 28, 46);
+    --bs-tooltip-color: var(--color-link);
+    --bs-tooltip-opacity: 1;
+  }
+  
+
 .under-construction{
     display:flex;
     margin: auto;
@@ -120,8 +127,12 @@ img{
     color: var(--color-heading);
 }
 
+.contact-items{
+    padding-left: 5px;
+}
+
 .contact-items>li{
-    display:flex;
+    display: flex;
     align-items: center;
     margin-bottom: 20px;
 }
