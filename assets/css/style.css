@@ -213,9 +213,6 @@ img{
     border-radius: 4%;
     border: 3px solid var(--color-brand);
     transition: all .5s;
-}
-
-.about-image:hover{
     box-shadow: 3px 3px 7px 1px rgb(0, 0, 0);
 }
 
