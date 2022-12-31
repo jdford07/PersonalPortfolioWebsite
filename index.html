@@ -842,7 +842,7 @@
                                     working solutions is nice, however, I consistently strive to find optimal solutions
                                     accounting for optimization, management, and future integrations or enhancements.
                                 </p>
-                                <p>My broad technical skillset allows me to be <i>versatile</i> while my soft skills
+                                <p>My broad technical skillset allows me to be <i>versatile</i> while my life skills
                                     allow me to develop and improve solutions that not only work for, but
                                     <i>enhance</i>, the lives of those around me.
                                 </p>
@@ -917,16 +917,22 @@
                         <ul class="contact-items">
                             <li data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
                                 <div class="contact-iconbox rounded-4">
-                                    <i class="lab la-linkedin contact-icon"></i>
+                                    <i class="lab la-linkedin contact-icon" data-bs-toggle="tooltip"
+                                        data-bs-custom-class="custom-tooltip" data-bs-placement="top"
+                                        title="LinkedIn"></i>
                                 </div>
                                 <a href="https://www.linkedin.com/in/john-david-ford-jr-7b010712a/" class="link-custom"
                                     target="_blank">John David Ford, Jr.</a>
                             </li>
                             <li data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
                                 <div class="contact-iconbox rounded-4">
-                                    <i class="las la-envelope contact-icon"></i>
+                                    <i class="las la-envelope contact-icon" data-bs-toggle="tooltip"
+                                        data-bs-custom-class="custom-tooltip" data-bs-placement="top"
+                                        title="E-Mail Address"></i>
                                 </div>
-                                <a class="link-custom">jdford7@gmail.com</a>
+                                <a class="link-custom" onClick="clickToCopyEmail()" id="emailAddress"
+                                    data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip"
+                                    data-bs-placement="top" title="Click to copy!">jdford7@gmail.com</a>
                             </li>
                         </ul>
                     </div>
@@ -934,13 +940,17 @@
                         <ul class="contact-items">
                             <li data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
                                 <div class="contact-iconbox rounded-4">
-                                    <i class="lab la-github contact-icon"></i>
+                                    <i class="lab la-github contact-icon" data-bs-toggle="tooltip"
+                                        data-bs-custom-class="custom-tooltip" data-bs-placement="top"
+                                        title="GitHub"></i>
                                 </div>
                                 <a href="https://github.com/jdford07" class="link-custom" target="_blank">jdford07</a>
                             </li>
                             <li data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
                                 <div class="contact-iconbox rounded-4">
-                                    <i class="las la-phone contact-icon"></i>
+                                    <i class="las la-phone contact-icon" data-bs-toggle="tooltip"
+                                        data-bs-custom-class="custom-tooltip" data-bs-placement="top"
+                                        title="Phone Number"></i>
                                 </div>
                                 <a href="./assets/files/Ford_Resume2023.pdf" class="link-custom"
                                     target="_blank">Available Inside Resume</a>
@@ -952,6 +962,20 @@
             </div>
         </section>
         <!-- CONTACT END -->
+
+        <hr class="section-separator rounded-circle">
+
+        <!-- FOOTER -->
+        <footer class="py-5 px-lg-5">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-auto">
+                        <p class="mb-0">Created by John David Ford, Jr.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--FOOTER END -->
 
     </div>
     <!-- CONTENT WRAPPER END -->

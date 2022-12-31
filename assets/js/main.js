@@ -14,3 +14,13 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+function clickToCopyEmail(){
+  var emailElement = document.getElementById("emailAddress");
+  emailText = emailElement.textContent;
+  navigator.clipboard.writeText(emailText);
+
+  emailElement.setAttribute("data-bs-original-title", "Copied "+emailText+" to clipboard!");
+  var tooltip = bootstrap.Tooltip.getInstance(emailElement);
+  tooltip.show();
+}
