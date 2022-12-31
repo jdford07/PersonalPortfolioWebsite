@@ -30,3 +30,10 @@ function clickToCopyEmail(){
   var tooltip = bootstrap.Tooltip.getInstance(emailElement);
   tooltip.show();
 }
+
+// Function to collapse the NavBar menu when a link is clicked on smaller screen resolutions
+function collapseNavBar(){
+  const menuToggle = document.getElementById('navbarNav');
+  const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false});
+  bsCollapse.toggle();
+}
