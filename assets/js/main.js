@@ -15,11 +15,17 @@ AOS.init({
 
 });
 
+
+// Function to copy E-mail Address anchor tag value from 'Contact' section to a user's clipboard when the e-mail address is clicked
+// Bootstrap tooltip title is also updated from "Click to copy" to "Copied [e-mail] to clipboard!"
 function clickToCopyEmail(){
   var emailElement = document.getElementById("emailAddress");
+
+  // Copy <a></a> e-mail address text value to user's clipboard
   emailText = emailElement.textContent;
   navigator.clipboard.writeText(emailText);
 
+  // Update Bootstrap tooltip to notify user the e-mail address was copied to their clipboard
   emailElement.setAttribute("data-bs-original-title", "Copied "+emailText+" to clipboard!");
   var tooltip = bootstrap.Tooltip.getInstance(emailElement);
   tooltip.show();

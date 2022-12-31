@@ -82,6 +82,12 @@ img{
     box-shadow: -6px 6px 0 0px var(--color-brand);
 }
 
+.home-bottom{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .iconbox{
     width: 60px;
     height: 60px;
@@ -149,6 +155,11 @@ img{
     font-size: 64px;
     background-color: var(--color-brand);
     color: var(--color-base);
+    transition: all 0.5s;
+}
+
+.contact-iconbox:hover{
+    box-shadow: 2px 2px 3px 1px rgb(0,0,0);
 }
 
 /* ABOUT ME */
@@ -158,6 +169,7 @@ img{
     justify-content: center;
     flex-direction: column;
 }
+
 .about-left{
     display: flex;
     flex-direction: column;
