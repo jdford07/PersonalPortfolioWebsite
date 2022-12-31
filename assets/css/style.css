@@ -20,6 +20,12 @@ body{
     font-family: var(--font-base), sans-serif;
 }
 
+section{
+    /* AOS animations causing horizontal scroll bar to appear unnecessaily */
+    /* If overflow: hidden or overflow-x:hidden is added to body, BootStrap scrollspy stops working when resume link is clicked */
+    overflow: hidden;
+}
+
 h1,h2,h3,h4,h5,h6{
     color: var(--color-heading);
     font-weight: 700;

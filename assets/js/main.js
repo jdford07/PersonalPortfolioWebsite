@@ -35,5 +35,12 @@ function clickToCopyEmail(){
 function collapseNavBar(){
   const menuToggle = document.getElementById('navbarNav');
   const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false});
-  bsCollapse.toggle();
+  const navImage = document.getElementById('navImage');
+
+  // Determine if navImage is visible (NavMenu not collapsable)
+  // If NavMenu is collapsed with Image shown, large screen resolution navbar flickers when a link is clicked
+  if(!navImage.offsetParent){
+    // If navImage is not visible, collapse menu
+    bsCollapse.toggle();
+  }
 }
