@@ -169,9 +169,16 @@ img{
 }
 
 /* MY NOTES */
+
 .notes-wrapper{
     display: flex;
     width: 100%;
+    border: 3px solid var(--color-brand);
+    box-shadow: 6px 6px 6px 2px rgba(0, 0, 0, 0.5);
+}
+
+.notes-body{
+    width: 80%;
 }
 
 .notes-buttons-list{
@@ -185,8 +192,14 @@ img{
 .notes-col-nav{
     display: flex;
     align-items: center;
+    background-color: var(--color-base2);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-right: 2px solid white;
+    border-image: linear-gradient(to bottom, rgba(0,0,0,0), var(--color-brand), rgba(0,0,0,0)) 1 100%;
     width: 20%;
     height: 75vh;
+    z-index: 1;
 }
 
 .notes-nav{
@@ -194,6 +207,7 @@ img{
     align-items: center;
     justify-content: center;
     text-align: center;
+    background: var(--color-base2);
 }
 
 .notes-nav>li{
@@ -208,7 +222,37 @@ img{
 }
 
 .nav-link-notes:hover, .nav-link-notes.active{
-    color: var(--color-brand)
+    color: var(--color-brand);
+}
+
+.card{
+    height: 75vh;
+    overflow-y: auto;
+    border-top-right-radius: 3%;
+    border-bottom-right-radius: 3%;
+    border: none;
+    background-color: var(--color-base);
+}
+
+.card-header{
+    background-color: var(--color-base2);
+}
+
+.card-header-tabs .nav-link{
+    background-color: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.card-header-tabs .nav-link:hover{
+    border: 1px solid var(--color-link2);
+    color: var(--color-link);
+}
+
+.card-header-tabs .nav-link.active{
+    border: 1px solid var(--color-brand);
+    border-bottom: 1px solid var(--color-base);
+    background-color: var(--color-base);
+    color: var(--color-brand);
 }
 
 .nav-card-link{
@@ -220,17 +264,15 @@ img{
 }
 
 .nav-card-link:hover, .nav-card-link.active{
-    color: var(--color-brand)
+    color: var(--color-link);
 }
 
-.notes-body{
-    width: 80%;
-}
-
-.card-text{
-    max-height: 75vh;
+.card-body{
+    max-height: 70vh;
     overflow-y: auto;
 }
+
+
 /* MY NOTES END */
 
 
@@ -397,6 +439,7 @@ img{
 
     .nav-card-link{
         font-size: 20px;
+        text-transform: uppercase;
     }
     .about-wrapper{
         flex-direction: column;
@@ -432,6 +475,7 @@ img{
     color: var(--color-base);
     border-color: var(--color-brand2);
 }
+
 /* BUTTON END */
 
 /* LINK */
