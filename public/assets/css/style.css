@@ -505,3 +505,14 @@ img{
     color: var(--color-link2);
 }
 /* LINK END */
+
+/* FOOTER */
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer>p{
+    margin: auto;
+}
+/* FOOTER END */
