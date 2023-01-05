@@ -30,7 +30,7 @@ function clickToCopyEmail(){
       tooltip.show();
     })
     .catch(() => {
-      alert("something went wrong");
+      console.log(`Error copying ${emailText} to clipboard`);
     });
   
 }
