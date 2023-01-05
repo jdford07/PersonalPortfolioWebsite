@@ -852,7 +852,7 @@
                                 </li>
                                 <li>
                                     <button class="btn btn-brand btn-notes" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#NotesDataStructures" aria-expanded="false">Search
+                                        data-bs-target="#NotesSearchAlgorithms" aria-expanded="false">Search
                                         Algorithms</button>
                                 </li>
                                 <li>
@@ -862,12 +862,12 @@
                                 </li>
                                 <li>
                                     <button class="btn btn-brand btn-notes" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#NotesDataStructures" aria-expanded="false">Misc
+                                        data-bs-target="#NotesMiscDevelopment" aria-expanded="false">Misc
                                         Development</button>
                                 </li>
                             </ul>
 
-                            <!-- Sorting ALGORITHMS -->
+                            <!-- SORTING ALGORITHMS -->
                             <div class="row">
                                 <div class="collapse" id="NotesSortingAlgorithms">
                                     <div class="col-md-12 bg-base notes-wrapper rounded-5">
@@ -1377,7 +1377,518 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Sorting ALGORITHMS END -->
+                            <!-- SORTING ALGORITHMS END -->
+
+                            <!-- SEARCH ALGORITHMS -->
+                            <div class="row">
+                                <div class="collapse" id="NotesSearchAlgorithms">
+                                    <div class="col-md-12 bg-base notes-wrapper rounded-5">
+                                        <div class="col-md-2 notes-col-nav">
+                                            <ul class="nav bg-base notes-nav" data-bs-tabs="tabs">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active nav-link-notes" aria-current="page"
+                                                        data-bs-toggle="tab" href="#binarySearchCard">Binary Search</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link nav-link-notes" data-bs-toggle="tab"
+                                                        href="#linearSearchCard">Linear Search</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link nav-link-notes" data-bs-toggle="tab"
+                                                        href="#jumpSearchCard">Jump Search</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link nav-link-notes" data-bs-toggle="tab"
+                                                        href="#breadthFirstSearchCard">Breadth First Search (BFS)</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link nav-link-notes" data-bs-toggle="tab"
+                                                        href="#depthFirstSearchCard">Depth First Search (DFS)</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-8 notes-body tab-content">
+                                            <!-- MERGE SORT CARD -->
+                                            <div class="card text-center tab-pane active" id="mergeSortCard">
+                                                <div class="card-header">
+                                                    <ul class="nav nav-tabs card-header-tabs" data-bs-tabs="tabs">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active nav-card-link" aria-current="true"
+                                                                data-bs-toggle="tab" href="#conceptMerge">Concept</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link nav-card-link" data-bs-toggle="tab"
+                                                                href="#pythonMerge">Python</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link nav-card-link" data-bs-toggle="tab"
+                                                                href="#resourcesMerge">Helpful Resources</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="card-body tab-content">
+                                                    <div class="tab-pane active" id="conceptMerge">
+                                                        <h5 class="card-title">Merge Sort</h5>
+                                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit. Ipsa architecto quaerat adipisci a laborum
+                                                            similique.</p>
+                                                    </div>
+                                                    <div class="tab-pane" id="pythonMerge">
+                                                        <h5 class="card-title">Special title treatment</h5>
+                                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur
+                                                            adipisicing elit. Eius labore qui eveniet fugit commodi!
+                                                            Incidunt laboriosam obcaecati, quisquam dolores reiciendis
+                                                            autem ab molestiae temporibus odio, accusantium optio
+                                                            maxime, veniam eius asperiores fuga? Porro accusantium earum
+                                                            veniam quam ea enim at eum dicta modi laborum consequuntur,
+                                                            quo cumque fugit quisquam deleniti.</p>
+                                                    </div>
+                                                    <div class="tab-pane" id="resourcesMerge">
+                                                        <h5 class="card-title">Special title treatment</h5>
+                                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit. Aperiam, vero.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- MERGE SORT CARD END -->
+
+                                            <!-- QUICK SORT CARD -->
+                                            <div class="card text-center tab-pane" id="quickSortCard">
+                                                <div class="card-header">
+                                                    <ul class="nav nav-tabs card-header-tabs" data-bs-tabs="tabs">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active nav-card-link" aria-current="true"
+                                                                data-bs-toggle="tab" href="#conceptQuick">Concept</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link nav-link-notes nav-card-link"
+                                                                data-bs-toggle="tab" href="#pythonQuick">Python</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link nav-link-notes nav-card-link"
+                                                                data-bs-toggle="tab" href="#resourcesQuick">Helpful
+                                                                Resources</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="card-body tab-content">
+                                                    <div class="tab-pane active" id="conceptQuick">
+                                                        <h5 class="card-title">Quick Sort</h5>
+                                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit. Blanditiis, labore?</p>
+                                                    </div>
+                                                    <div class="tab-pane" id="pythonQuick">
+                                                        <h5 class="card-title">Special title treatment</h5>
+                                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit. Nulla autem eum, cupiditate, fugit velit
+                                                            temporibus sequi corrupti quam praesentium blanditiis dicta
+                                                            explicabo, voluptatem asperiores voluptate? Ratione suscipit
+                                                            quasi omnis aperiam quos nobis pariatur, veniam ab
+                                                            dignissimos voluptatum expedita assumenda, eos aliquam
+                                                            eveniet consequatur error velit reiciendis animi nisi
+                                                            accusamus facilis. Ut ipsa temporibus molestiae totam, nam
+                                                            beatae, corrupti quis sunt a eveniet atque, nesciunt
+                                                            expedita ullam. Consequatur laborum veniam totam amet
+                                                            voluptate facere in incidunt magnam voluptatum illum
+                                                            officiis illo maxime, eum exercitationem numquam dolores
+                                                            unde. Quae, nam doloribus quas maxime ab, at error
+                                                            dignissimos unde culpa earum ipsam reprehenderit, suscipit
+                                                            eos quibusdam voluptate excepturi iusto sequi totam adipisci
+                                                            incidunt debitis. Quis velit nulla explicabo sint
+                                                            dignissimos non a temporibus, ducimus dolor perferendis
+                                                            nihil vitae sapiente itaque vel odit eius? Dolorum nesciunt
+                                                            ad laboriosam omnis tempora culpa quidem qui soluta, illum
+                                                            aut suscipit maiores. Aspernatur, animi. Odio soluta
+                                                            adipisci dolor aliquid, quas sit animi cupiditate facere
+                                                            itaque saepe eligendi enim non. Unde et, quis alias
+                                                            blanditiis, exercitationem quisquam cupiditate commodi illo
+                                                            ipsa architecto libero voluptates facilis amet est assumenda
+                                                            earum provident ut molestiae. Animi alias non in deleniti
+                                                            optio vero debitis laborum ab! Maiores officiis nulla
+                                                            mollitia voluptas libero adipisci quo magnam ipsam facilis
+                                                            deleniti quos odio cum hic corrupti repellendus, fuga, nam
+                                                            possimus, eligendi quisquam aspernatur! Quis consequuntur
+                                                            nesciunt, facere distinctio ex pariatur magni voluptatum
+                                                            provident officia quibusdam quos natus blanditiis molestiae
+                                                            reiciendis, commodi recusandae assumenda at eos eveniet rem
+                                                            fugit minima porro deleniti? Numquam, minus accusamus ipsam
+                                                            laboriosam molestias adipisci ab possimus nesciunt at nobis
+                                                            quo iste error eligendi eius temporibus reprehenderit
+                                                            nostrum soluta in veritatis alias expedita amet obcaecati.
+                                                            Assumenda nemo impedit consequuntur unde et recusandae odio
+                                                            at, quasi necessitatibus odit laborum quis quisquam culpa
+                                                            aliquid rem voluptatum quae officiis sed facere? Amet id
+                                                            odio blanditiis architecto accusantium omnis ipsa asperiores
+                                                            reiciendis beatae eum. Placeat, ea reprehenderit? Recusandae
+                                                            iusto illo modi nihil numquam voluptate quia quibusdam
+                                                            cupiditate dolor, quidem officiis ipsa porro fuga magnam
+                                                            reiciendis odit distinctio voluptates id consequatur! Optio
+                                                            voluptas, alias natus nulla commodi ut perferendis facilis
+                                                            dolor et recusandae exercitationem eius praesentium
+                                                            similique quidem culpa ratione quaerat. Quia at soluta quo
+                                                            debitis deleniti, fugiat blanditiis assumenda eius eveniet
+                                                            expedita magni quos delectus mollitia dolorum laudantium
+                                                            nemo doloremque omnis commodi voluptatibus, vero, odit
+                                                            voluptate illum animi! Omnis aut, ipsam enim iusto eligendi
+                                                            est repudiandae sunt corporis nostrum? Tenetur porro earum
+                                                            quam illo, quo sed ad natus eos illum et odit. Aperiam enim
+                                                            tempora, reprehenderit, corrupti quidem ex, doloremque
+                                                            eveniet eum sit laudantium amet voluptas vel commodi
+                                                            necessitatibus autem natus ducimus rerum excepturi molestiae
+                                                            ullam veniam incidunt. Porro enim quaerat minus suscipit
+                                                            velit inventore accusantium architecto alias iure, quos
+                                                            impedit doloribus dolorum quis eos doloremque sit dolores
+                                                            perferendis consequuntur ea culpa eligendi sequi nostrum
+                                                            magni dicta! Amet cumque non reiciendis quos. Sed quisquam,
+                                                            maxime commodi, voluptates quae iure a quidem corporis illo
+                                                            reiciendis minus tempore libero mollitia debitis corrupti
+                                                            dolorem laudantium, ex vero ad! Fuga magni expedita sunt.
+                                                            Maiores, saepe. Tempore ea at recusandae deserunt velit quos
+                                                            necessitatibus ducimus eius eum ratione nihil adipisci
+                                                            molestias itaque quae quo maxime, quia harum. Vitae pariatur
+                                                            odit eaque doloribus ullam. Nesciunt mollitia cum porro
+                                                            suscipit! Quia exercitationem possimus culpa facere vitae
+                                                            architecto quasi quis velit impedit eligendi blanditiis
+                                                            voluptatem nulla iusto, deserunt corrupti qui. Ab, tempora
+                                                            cum voluptates dicta eum id numquam excepturi labore illum
+                                                            deserunt magni iste ipsam natus aspernatur voluptas sapiente
+                                                            facilis omnis sed? Recusandae porro saepe culpa, optio
+                                                            quisquam, adipisci magnam reprehenderit voluptatibus tempore
+                                                            eligendi incidunt minima, vitae iste rerum ipsam sunt error
+                                                            obcaecati eius. Voluptas accusamus cumque quo quas numquam
+                                                            nesciunt nobis facilis esse delectus assumenda repellendus
+                                                            quos, reprehenderit totam voluptatibus fugit eum suscipit.
+                                                            Expedita nostrum in aliquam rem sed esse nisi, temporibus
+                                                            perspiciatis cum perferendis blanditiis, doloribus, illo
+                                                            tempora accusamus. Voluptate deserunt soluta eaque enim
+                                                            dignissimos eos dolor ut aliquid. Nemo, quam autem enim
+                                                            iusto amet numquam velit deleniti odio laborum totam
+                                                            provident? Adipisci vel quia minus voluptatum, totam,
+                                                            doloremque distinctio tempora repellendus obcaecati sapiente
+                                                            eligendi delectus, voluptas aperiam. Cupiditate, atque!
+                                                            Aliquid, vitae eius. Fuga assumenda perspiciatis repellendus
+                                                            suscipit distinctio reiciendis, adipisci quos, ipsam rem
+                                                            quia accusamus corrupti, tenetur maxime asperiores quidem
+                                                            laboriosam velit labore dolorem libero! Esse earum est,
+                                                            fugiat delectus quisquam nihil unde, beatae maiores ipsum
+                                                            aliquid molestiae, a ea! Hic dolore iure, nesciunt unde quae
+                                                            laborum eos ipsa! Quae saepe blanditiis fugiat commodi qui.
+                                                            Voluptate totam soluta quisquam ducimus repellendus harum
+                                                            inventore molestias dicta alias at. Sunt dolore repudiandae
+                                                            illum nisi nesciunt? Accusantium consequuntur iure
+                                                            distinctio neque reprehenderit perspiciatis consequatur
+                                                            nihil porro laborum quae! Magnam dolore sapiente neque
+                                                            aliquam et ex, enim voluptate aperiam dicta alias natus
+                                                            exercitationem ducimus pariatur maxime consequuntur ut
+                                                            laudantium cupiditate, sit labore amet officia perspiciatis
+                                                            expedita. Doloremque, dolor eaque. A suscipit incidunt
+                                                            aspernatur dolore iste labore consequatur vel debitis beatae
+                                                            odit tempore, reprehenderit distinctio rem enim. Cum,
+                                                            provident nemo accusamus quae, facilis error tempore
+                                                            voluptatibus, maxime minima atque commodi nesciunt. Omnis
+                                                            soluta a quas reprehenderit eveniet recusandae officia, hic
+                                                            beatae sequi molestias expedita unde cumque. A, error
+                                                            cupiditate? Culpa iusto, minus ab laudantium, velit nisi
+                                                            iste repellat, odit consequuntur sunt sed ratione similique?
+                                                            Pariatur recusandae, perferendis eum minus dolorum cumque
+                                                            deleniti repellat mollitia atque voluptatum nobis laudantium
+                                                            ipsa vitae? Laborum aperiam quod fugit animi reprehenderit
+                                                            officia. Quibusdam commodi veritatis laboriosam ullam
+                                                            dolores iusto culpa quia odit voluptate, doloremque magni
+                                                            libero tenetur necessitatibus iure quam ratione neque
+                                                            dignissimos quisquam consectetur quis provident,
+                                                            perspiciatis, cupiditate et. Iure in, esse similique
+                                                            commodi, quisquam blanditiis illum nobis laudantium
+                                                            exercitationem tenetur ipsa. Labore magnam corrupti laborum
+                                                            assumenda delectus sunt cumque ab reprehenderit obcaecati
+                                                            iste tempore ipsum, quibusdam illo neque aut maiores eos
+                                                            doloribus officiis distinctio est officia molestiae
+                                                            exercitationem. Sunt ratione itaque error sint saepe id ut
+                                                            ipsa, unde, accusamus consectetur nesciunt ad rerum dicta
+                                                            nihil quasi explicabo, molestiae est nulla! Neque asperiores
+                                                            et voluptate laudantium sit voluptas consequuntur ea, saepe
+                                                            eum laboriosam amet similique dignissimos sunt ipsa error!
+                                                            Sequi placeat molestiae pariatur eos adipisci iure quis
+                                                            assumenda facere ratione porro sunt dolorum cum architecto
+                                                            fugiat voluptatibus, consequatur, inventore hic neque odio
+                                                            repellat. Dicta dolorum voluptas culpa doloribus harum quasi
+                                                            quisquam cum corporis? Assumenda sunt exercitationem
+                                                            consectetur ipsum, debitis suscipit eos quas modi expedita
+                                                            porro. Eius saepe excepturi culpa hic assumenda voluptatem
+                                                            sed iste maxime vel error, beatae maiores cum cumque eaque
+                                                            nam autem totam itaque architecto illum enim odit voluptas
+                                                            ullam! Ipsum nostrum, placeat blanditiis id animi illum
+                                                            eligendi atque fugiat odio dolore quo commodi, dignissimos
+                                                            harum ducimus eveniet laboriosam soluta. Doloribus ut vero
+                                                            neque amet tempore sed magni alias eos sequi molestias
+                                                            voluptatibus, reiciendis harum! Delectus, in. Eligendi,
+                                                            excepturi. Aperiam tempore consequuntur qui, dolorem
+                                                            sapiente, iure velit nesciunt facere aspernatur nihil illum,
+                                                            cum deserunt quam eaque recusandae odit? Sunt eveniet ipsum
+                                                            est eos eligendi neque culpa ad iure repellendus quibusdam
+                                                            incidunt aliquam ipsa debitis deserunt nobis reiciendis in
+                                                            magnam omnis, id nostrum officia nisi pariatur, dolores
+                                                            voluptatem? Laboriosam consequatur libero dolore autem dicta
+                                                            natus fugit eos ad optio? Provident ut assumenda voluptatem,
+                                                            soluta veritatis, consectetur unde dolor dolores nemo
+                                                            adipisci esse minus vel. Quidem commodi inventore a est
+                                                            aspernatur. Ex quidem eum, asperiores laborum porro
+                                                            exercitationem nemo? Tenetur aliquam repellendus placeat
+                                                            nihil tempore aspernatur aperiam. Alias soluta accusantium a
+                                                            ipsum, dignissimos fugit autem laudantium aliquam velit
+                                                            obcaecati esse maxime! Rerum praesentium exercitationem nam
+                                                            optio, molestiae velit soluta officiis earum ducimus iste
+                                                            fugiat quos obcaecati inventore ad consequuntur beatae
+                                                            repellendus distinctio dolor autem expedita culpa. Neque
+                                                            expedita nostrum repellat omnis sequi vitae tenetur atque
+                                                            doloribus doloremque tempora quos maxime, nesciunt aliquam
+                                                            sunt nulla rerum rem dicta minus quidem eum adipisci optio
+                                                            deserunt obcaecati eaque. Id dolore aut corrupti ullam. Eos
+                                                            nemo totam, dolore soluta eveniet veniam at. Qui
+                                                            voluptatibus rerum maxime fugiat officia enim quidem fuga
+                                                            voluptatum eum. Quibusdam est facilis sunt cumque,
+                                                            praesentium vero ab atque eius, nobis totam fugit architecto
+                                                            quos error provident maxime sint, amet voluptates tempore
+                                                            voluptate a asperiores! Quisquam voluptatibus, modi quaerat
+                                                            quia ex ab laboriosam similique, architecto error ad veniam
+                                                            doloribus laudantium quasi, consectetur maxime possimus.
+                                                            Nesciunt rem provident temporibus quaerat magnam, rerum
+                                                            recusandae culpa perferendis commodi, eum nostrum voluptatum
+                                                            voluptas doloremque mollitia aut, nisi nobis vel dolorem.
+                                                            Perferendis ullam saepe officiis eum in neque at repellendus
+                                                            illum, architecto earum magnam? Odit porro facilis maxime
+                                                            adipisci distinctio atque nobis neque asperiores voluptatem
+                                                            voluptate quas exercitationem, sed ab numquam quam libero
+                                                            dolores in debitis. Quas ullam voluptas voluptatibus
+                                                            laboriosam eveniet accusantium iusto maxime earum nam ipsum
+                                                            minus eligendi fuga, quos facilis nemo temporibus eum
+                                                            veritatis enim mollitia accusamus? Magnam, voluptas. Odio,
+                                                            optio officiis. Reiciendis esse pariatur ullam aspernatur
+                                                            ratione odio ducimus ut provident velit veniam
+                                                            necessitatibus maxime culpa aliquam cum suscipit delectus
+                                                            laboriosam sed at, repudiandae tempora. Eius maiores
+                                                            nesciunt totam nulla doloremque vero sed, asperiores quod
+                                                            nam, perferendis quisquam quas odit eveniet dolorum! Sit
+                                                            cumque sed necessitatibus cupiditate eos! Fugiat quae
+                                                            laboriosam iure distinctio doloremque tenetur aliquam,
+                                                            impedit dolorem beatae soluta ut corrupti, necessitatibus
+                                                            consequuntur aspernatur adipisci veniam, assumenda quidem?
+                                                            Natus culpa illum architecto? Consequatur, inventore
+                                                            distinctio! Aspernatur nostrum quasi, debitis saepe
+                                                            consequatur asperiores eligendi voluptas illo unde?
+                                                            Consectetur ipsam quasi earum nisi, qui similique quos
+                                                            consequuntur saepe voluptatem. Modi unde magnam eveniet quis
+                                                            officia quaerat officiis nostrum, atque illum debitis ullam
+                                                            porro quasi tempora excepturi id repudiandae dolorum minus
+                                                            fugit harum reprehenderit, itaque illo quam ea! Nemo, nobis
+                                                            saepe odio voluptates natus repudiandae animi voluptatum
+                                                            dolores. Incidunt facilis sint, asperiores dicta id expedita
+                                                            dolorem deserunt dolores, ipsa a rem, molestiae dolor eos
+                                                            nemo nam officiis porro odio tenetur sapiente quas nisi.
+                                                            Enim quisquam dolorem obcaecati possimus dolores commodi
+                                                            dicta? Dolor, animi incidunt at, pariatur illum libero
+                                                            fugiat esse quos autem earum tempora, voluptates aperiam
+                                                            doloremque provident repudiandae necessitatibus molestias
+                                                            dolorum omnis sequi rem fugit. Libero veniam mollitia, eos
+                                                            impedit voluptates consectetur, corrupti voluptate
+                                                            repudiandae odio consequatur, perspiciatis dolore architecto
+                                                            esse? Esse veritatis, aperiam, distinctio asperiores, ipsam
+                                                            neque eaque tenetur quisquam dignissimos officia corporis
+                                                            nisi qui voluptate ratione quidem nostrum aspernatur dicta.
+                                                            Libero ipsam ea perferendis, alias inventore reiciendis
+                                                            iusto. Voluptatum ratione atque, voluptate eos aliquam dolor
+                                                            eveniet, facere vero est sit amet ab, iste explicabo saepe
+                                                            culpa asperiores non molestiae nemo! Delectus soluta
+                                                            aspernatur, magni nobis asperiores voluptates ratione
+                                                            nesciunt excepturi fugiat aut, quibusdam minima deserunt!
+                                                            Vero quos consequatur voluptatibus labore. Nulla nobis eos
+                                                            minima expedita illo maxime deserunt omnis, id, quis quidem
+                                                            eum. Laboriosam sit inventore sint ad culpa facilis dolor
+                                                            beatae blanditiis rerum ipsa? Unde quis dolor laudantium
+                                                            similique, incidunt eum! Animi adipisci rem pariatur, earum
+                                                            aut laudantium laborum ipsa expedita dignissimos soluta
+                                                            consectetur quam dicta totam recusandae excepturi asperiores
+                                                            maiores cum aliquid quibusdam veritatis? Numquam dolores
+                                                            consequuntur minus voluptatum totam repellat tempora
+                                                            voluptas obcaecati mollitia id expedita maiores itaque,
+                                                            maxime eius beatae iusto sint dolore enim, illo sit porro
+                                                            minima laboriosam assumenda. Adipisci ipsa doloremque nulla
+                                                            veniam accusantium doloribus iusto quae ex rem labore neque,
+                                                            dicta quaerat obcaecati, saepe nesciunt expedita, totam
+                                                            aliquam voluptatem eligendi reprehenderit? Autem unde iure
+                                                            incidunt ullam obcaecati distinctio ipsa facere laudantium
+                                                            sapiente! Obcaecati quas odit eaque autem ex ea nulla fugiat
+                                                            veniam! Et, est ab sapiente tenetur molestias deleniti? Fuga
+                                                            molestiae, voluptate numquam error ea atque ipsam, impedit
+                                                            illo deleniti, inventore sint! Asperiores in delectus velit,
+                                                            facilis minus voluptatum voluptatem vitae sapiente illo
+                                                            adipisci deleniti unde molestias, officia ducimus dolorum
+                                                            aliquid optio corrupti! Voluptatum voluptates repudiandae,
+                                                            modi odit facilis eligendi, non, sunt autem doloremque at
+                                                            officia nihil? Illum odio quod labore dolor ducimus non
+                                                            quae, culpa assumenda nihil, quas inventore eos eveniet
+                                                            pariatur quia fugit voluptas enim sapiente a adipisci beatae
+                                                            quasi! Cumque modi neque soluta autem officia facilis
+                                                            nostrum, possimus vel ea deserunt ducimus explicabo ipsum, a
+                                                            ratione architecto perspiciatis assumenda exercitationem
+                                                            illo quisquam commodi! Eum inventore est veritatis deleniti
+                                                            voluptatem, doloribus cupiditate enim non molestias
+                                                            laudantium dicta odio quidem perspiciatis, cumque mollitia
+                                                            voluptate itaque expedita accusamus voluptatibus voluptas
+                                                            voluptates a tenetur consequatur labore. Minima rem,
+                                                            corrupti facilis neque nisi nostrum vel eveniet hic quis
+                                                            modi? Perspiciatis explicabo quod facere! Eius fuga in quae
+                                                            aliquid, quasi magnam cum quia, ipsum vitae ipsa blanditiis
+                                                            enim ullam maiores doloribus maxime possimus culpa vel rem
+                                                            iure porro veniam. Animi sit ea unde nam accusamus soluta,
+                                                            ipsa quis.</p>
+                                                    </div>
+                                                    <div class="tab-pane" id="resourcesQuick">
+                                                        <h5 class="card-title">Special title treatment</h5>
+                                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit. Aperiam, vero.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- QUICK SORT CARD END -->
+
+                                            <!-- INSERTION SORT CARD -->
+                                            <div class="card text-center tab-pane" id="insertionSortCard">
+                                                <div class="card-header">
+                                                    <ul class="nav nav-tabs card-header-tabs" data-bs-tabs="tabs">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active nav-card-link" aria-current="true"
+                                                                data-bs-toggle="tab"
+                                                                href="#conceptInsertion">Concept</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link nav-card-link" data-bs-toggle="tab"
+                                                                href="#pythonInsertion">Python</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link nav-card-link" data-bs-toggle="tab"
+                                                                href="#resourcesInsertion">Helpful Resources</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="card-body tab-content">
+                                                    <div class="tab-pane active" id="conceptInsertion">
+                                                        <h5 class="card-title">Insertion Sort</h5>
+                                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit. Ipsa architecto quaerat adipisci a laborum
+                                                            similique.</p>
+                                                    </div>
+                                                    <div class="tab-pane" id="pythonInsertion">
+                                                        <h5 class="card-title">Special title treatment</h5>
+                                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur
+                                                            adipisicing elit. Eius labore qui eveniet fugit commodi!
+                                                            Incidunt laboriosam obcaecati, quisquam dolores reiciendis
+                                                            autem ab molestiae temporibus odio, accusantium optio
+                                                            maxime, veniam eius asperiores fuga? Porro accusantium earum
+                                                            veniam quam ea enim at eum dicta modi laborum consequuntur,
+                                                            quo cumque fugit quisquam deleniti.</p>
+                                                    </div>
+                                                    <div class="tab-pane" id="resourcesInsertion">
+                                                        <h5 class="card-title">Special title treatment</h5>
+                                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit. Aperiam, vero.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- INSERTION SORT CARD END -->
+
+                                            <!-- HEAP SORT CARD -->
+                                            <div class="card text-center tab-pane" id="heapSortCard">
+                                                <div class="card-header">
+                                                    <ul class="nav nav-tabs card-header-tabs" data-bs-tabs="tabs">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active nav-card-link" aria-current="true"
+                                                                data-bs-toggle="tab" href="#conceptHeap">Concept</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link nav-card-link" data-bs-toggle="tab"
+                                                                href="#pythonHeap">Python</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link nav-card-link" data-bs-toggle="tab"
+                                                                href="#resourcesHeap">Helpful Resources</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="card-body tab-content">
+                                                    <div class="tab-pane active" id="conceptHeap">
+                                                        <h5 class="card-title">Heap Sort</h5>
+                                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit. Ipsa architecto quaerat adipisci a laborum
+                                                            similique.</p>
+                                                    </div>
+                                                    <div class="tab-pane" id="pythonHeap">
+                                                        <h5 class="card-title">Special title treatment</h5>
+                                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur
+                                                            adipisicing elit. Eius labore qui eveniet fugit commodi!
+                                                            Incidunt laboriosam obcaecati, quisquam dolores reiciendis
+                                                            autem ab molestiae temporibus odio, accusantium optio
+                                                            maxime, veniam eius asperiores fuga? Porro accusantium earum
+                                                            veniam quam ea enim at eum dicta modi laborum consequuntur,
+                                                            quo cumque fugit quisquam deleniti.</p>
+                                                    </div>
+                                                    <div class="tab-pane" id="resourcesHeap">
+                                                        <h5 class="card-title">Special title treatment</h5>
+                                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit. Aperiam, vero.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- HEAP SORT CARD END -->
+
+                                            <!-- HEAP SORT CARD -->
+                                            <div class="card text-center tab-pane" id="bubbleSortCard">
+                                                <div class="card-header">
+                                                    <ul class="nav nav-tabs card-header-tabs" data-bs-tabs="tabs">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link active nav-card-link" aria-current="true"
+                                                                data-bs-toggle="tab" href="#conceptBubble">Concept</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link nav-card-link" data-bs-toggle="tab"
+                                                                href="#pythonBubble">Python</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link nav-card-link" data-bs-toggle="tab"
+                                                                href="#resourcesBubble">Helpful Resources</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="card-body tab-content">
+                                                    <div class="tab-pane active" id="conceptBubble">
+                                                        <h5 class="card-title">Bubble Sort</h5>
+                                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit. Ipsa architecto quaerat adipisci a laborum
+                                                            similique.</p>
+                                                    </div>
+                                                    <div class="tab-pane" id="pythonBubble">
+                                                        <h5 class="card-title">Special title treatment</h5>
+                                                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur
+                                                            adipisicing elit. Eius labore qui eveniet fugit commodi!
+                                                            Incidunt laboriosam obcaecati, quisquam dolores reiciendis
+                                                            autem ab molestiae temporibus odio, accusantium optio
+                                                            maxime, veniam eius asperiores fuga? Porro accusantium earum
+                                                            veniam quam ea enim at eum dicta modi laborum consequuntur,
+                                                            quo cumque fugit quisquam deleniti.</p>
+                                                    </div>
+                                                    <div class="tab-pane" id="resourcesBubble">
+                                                        <h5 class="card-title">Special title treatment</h5>
+                                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit. Aperiam, vero.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- BUBBLE SORT CARD END -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- SEARCH ALGORITHMS END -->
                         </div>
 
                     </div>
