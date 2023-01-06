@@ -44,3 +44,20 @@ function collapseNavBar(){
     bsCollapse.toggle();
   }
 }
+
+// Function to hide all MyNotes sections (Ex: Sorting Algorithms, DataStructures...) and show the section corresponding to the active button
+function collapseNotesCard(notesID){
+  const notesObjs = document.getElementsByClassName('notes-base');
+
+  for (let i = 0; i < notesObjs.length; i++){
+    let noteToggle = document.getElementById(notesObjs[i].id);
+    let bsCollapse = new bootstrap.Collapse(noteToggle, {toggle: false});
+
+    if(notesObjs[i].id != notesID){
+      bsCollapse.hide();
+    }
+    else{
+      // Do nothing 
+    }
+  }
+}

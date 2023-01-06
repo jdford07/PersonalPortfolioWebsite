@@ -846,13 +846,16 @@
                         <div class="row px-4">
                             <ul class="p-1 notes-buttons-list">
                                 <li>
-                                    <a class="btn btn-brand btn-notes" data-bs-toggle="collapse"
-                                        href="#NotesSortingAlgorithms" role="button" aria-expanded="false">
-                                        Sorting Algorithms</a>
+                                    <button class="btn btn-brand btn-notes" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#NotesSortingAlgorithms"
+                                        onclick="collapseNotesCard('NotesSortingAlgorithms')" aria-expanded="false">
+                                        Sorting Algorithms</button>
                                 </li>
                                 <li>
                                     <button class="btn btn-brand btn-notes" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#NotesSearchAlgorithms" aria-expanded="false">Search
+                                        data-bs-target="#NotesSearchAlgorithms"
+                                        onclick="collapseNotesCard('NotesSearchAlgorithms')"
+                                        aria-expanded="false">Search
                                         Algorithms</button>
                                 </li>
                                 <li>
@@ -869,7 +872,7 @@
 
                             <!-- SORTING ALGORITHMS -->
                             <div class="row">
-                                <div class="collapse" id="NotesSortingAlgorithms">
+                                <div class="collapse notes-base" id="NotesSortingAlgorithms">
                                     <div class="col-md-12 bg-base notes-wrapper rounded-5">
                                         <div class="col-md-2 notes-col-nav">
                                             <ul class="nav bg-base notes-nav" data-bs-tabs="tabs">
@@ -1381,7 +1384,7 @@
 
                             <!-- SEARCH ALGORITHMS -->
                             <div class="row">
-                                <div class="collapse" id="NotesSearchAlgorithms">
+                                <div class="collapse notes-base" id="NotesSearchAlgorithms">
                                     <div class="col-md-12 bg-base notes-wrapper rounded-5">
                                         <div class="col-md-2 notes-col-nav">
                                             <ul class="nav bg-base notes-nav" data-bs-tabs="tabs">
