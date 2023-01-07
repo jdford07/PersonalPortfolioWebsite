@@ -391,18 +391,20 @@ img{
 
 .cloud-storage-modal-body>h3{
     text-align: center;
-    text-decoration: underline;
 }
 
 .cloud-storage-modal-body>h5{
     text-align: center;
-    text-decoration: underline;
     font-size: 22px;
 }
 
 .cloud-storage-modal-body>h6{
     text-decoration: underline;
-    font-size: 20px;
+    font-size: 18px;
+}
+
+.experience-body>h4{
+    text-align: center;
 }
 
 .experience-wrapper{
@@ -420,6 +422,12 @@ img{
 .experience-wrapper:hover>p>i{
     color: var(--color-link);
     transition: all 0.2s ease-in;
+}
+
+.experience-bold{
+    color: var(--color-heading);
+    font-weight: 700;
+    text-shadow: 2px 2px #000000;
 }
 
 .la-hand-point-right{
