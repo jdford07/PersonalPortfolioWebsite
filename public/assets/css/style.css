@@ -88,6 +88,10 @@ img{
     box-shadow: -6px 6px 0 0px var(--color-brand);
 }
 
+.center-text{
+    text-align: center;
+}
+
 .home-bottom{
     display: flex;
     align-items: center;
@@ -389,18 +393,38 @@ img{
     text-align: center;
     text-decoration: underline;
 }
+
 .cloud-storage-modal-body>h5{
     text-align: center;
     text-decoration: underline;
     font-size: 22px;
 }
+
 .cloud-storage-modal-body>h6{
     text-decoration: underline;
     font-size: 20px;
 }
 
-.center-text{
-    text-align: center;
+.experience-wrapper{
+    border-radius: 1rem;
+    border: 1px solid rgba(0,0,0,0);
+}
+
+.experience-wrapper:hover{
+    background-color: rgb(32, 36, 63);
+    border: 1px solid var(--color-brand);
+    box-shadow: 2px 2px 3px rgba(0,0,0,1);
+    transition: all 0.2s ease-in;
+}
+
+.experience-wrapper:hover>p>i{
+    color: var(--color-link);
+    transition: all 0.2s ease-in;
+}
+
+.la-hand-point-right{
+    color: var(--color-brand);
+    font-size: 24px;
 }
 
 /* MODALS END */
