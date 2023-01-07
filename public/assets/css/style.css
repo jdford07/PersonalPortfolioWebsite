@@ -385,6 +385,24 @@ img{
     z-index: 1;
 }
 
+.cloud-storage-modal-body>h3{
+    text-align: center;
+    text-decoration: underline;
+}
+.cloud-storage-modal-body>h5{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 22px;
+}
+.cloud-storage-modal-body>h6{
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+.center-text{
+    text-align: center;
+}
+
 /* MODALS END */
 
 
