@@ -440,6 +440,10 @@ img{
     font-size: 24px;
 }
 
+.certificate-pdf-body{
+    height: 70vh;
+}
+
 /* MODALS END */
 
 
