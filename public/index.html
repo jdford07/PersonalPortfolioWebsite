@@ -87,8 +87,7 @@
                             data-aos-duration="1000">
                             <div class="ms-2">
                                 <a href="./assets/files/Ford_Resume2023.pdf" class="btn btn-brand me-3"
-                                    target="_blank">View
-                                    My Resume</a>
+                                    target="_blank">View My Resume <i class="las la-external-link-alt"></i></a>
                             </div>
                             <div class="m-2">
                                 <a href="#contact" class="link-custom">E-mail: jdford7@gmail.com</a>
@@ -153,52 +152,137 @@
                                     </button>
                                 </div>
                                 <hr class="section-separator rounded-circle">
-                                <div class="modal-body fs-5">
-                                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet eros id
-                                        ex facilisis rhoncus. Donec faucibus ante viverra tristique ornare. In dictum
-                                        dui in tellus elementum, ac pharetra velit dignissim. Nunc fringilla at quam a
-                                        aliquam. Nulla facilisi. Sed fermentum ipsum at elit laoreet consequat. Quisque
-                                        vitae sapien ante. Aenean eget dignissim leo. Sed dictum leo ac finibus rutrum.
+                                <div class="modal-body cloud-storage-modal-body fs-5">
+                                    <h3>Project Description</h3>
+                                    <p class="center-text">The <a class="about-bold">Secure Cloud File Storage
+                                            System</a> was a semester long, cyber security focused, project designed and
+                                        developed to cap off my Master's of Computer Engineering at the University of
+                                        Louisville. I worked with tenured professor Adrian Lauf who specializes in
+                                        embedded system design and cyber security. Dr. Lauf also showcased his mean
+                                        cello skills during our May 2020 commencement ceremony.
+                                    </p>
+                                    <p class="center-text">Below you'll find a synopsis of the project. I <a
+                                            class="about-bold">highly</a> encourage you to read my
+                                        <a class="link-custom"
+                                            href="./assets/files/SecureCloudFileStorage/Secure Cloud File Storage System Report.pdf"
+                                            target="_blank">detailed engineering report <i
+                                                class="las la-external-link-alt"></i>
+                                        </a> containing in-depth implementation details alongside measured performance
+                                        testing results.
+                                    </p>
 
-                                        Integer sit amet congue libero. Duis libero metus, vulputate in enim ut,
-                                        suscipit lobortis neque. Curabitur at diam in tortor eleifend faucibus sit amet
-                                        sit amet magna. In laoreet porttitor neque ut pharetra. Phasellus id sapien sed
-                                        sapien mattis imperdiet nec eu tellus. Maecenas ac mollis felis. Phasellus diam
-                                        nibh, vestibulum quis dui id, lobortis dignissim velit. Vivamus sodales leo in
-                                        tortor aliquam, sed posuere ante posuere. Quisque ac dignissim est. Phasellus
-                                        sed lacus ac ante iaculis rutrum. Lorem ipsum dolor sit amet, consectetur
-                                        adipiscing elit. Curabitur ac erat vel nibh hendrerit egestas in sit amet lacus.
-                                        Phasellus vel bibendum odio, sed lacinia nibh.
+                                    <h3 class="mt-5">System Requirements</h3>
+                                    <p>
+                                        <a class="about-bold">Client-side development:</a><span> Python 3.7 and a
+                                            working computer</span>
+                                    </p>
+                                    <p>
+                                        <a class="about-bold">Server-side development:</a> <span>Python 3.7 and an HP
+                                            Proliant MicroServer using VMWare VSphere to host a 128GB Ubuntu 19.10
+                                            Desktop distribution</span>
+                                    </p>
+                                    <p>
+                                        <a class="about-bold">Python Libraries:</a><span> Sys, Time, Socket, Pathlib and
+                                            Crypto*</span>
+                                    </p>
 
-                                        Vivamus feugiat, risus a semper semper, quam nisi interdum turpis, vitae
-                                        consequat nibh risus eget ante. Sed ut lacus sapien. Vivamus dui nibh, vehicula
-                                        eu neque quis, elementum ornare mi. Morbi libero lacus, rhoncus nec elementum
-                                        eget, pretium eget augue. Cras id ex aliquet libero posuere tincidunt et eget
-                                        ligula. Nunc at metus a tellus gravida elementum. Sed lacus mi, placerat sed
-                                        sapien non, euismod dictum elit. Praesent iaculis egestas sem, sit amet
-                                        vulputate magna iaculis eu.
+                                    <h3 class="mt-5"><u>Stage 1: File Splitting</u></h3>
+                                    <h5>Overview</h5>
+                                    <p align="center">Simply put, a user provided .txt file is split into 3 separate,
+                                        but equal, .txt
+                                        files.
+                                    </p>
+                                    <h5>Details</h5>
+                                    <p>During execution, a user is prompted with a menu for the file they would like to
+                                        provide. For example, a user will provide the file <b
+                                            class="about-bold">TestText.txt</b> that contains <i>This is for demo
+                                            purpose only!</i>
+                                    </p>
+                                    <p>The client system creates a <b class="about-bold">TestText.txt</b> directory then
+                                        creates and places
+                                        <b class="about-bold">TestText1.txt</b>, <b class="about-bold">TestText2.txt</b>
+                                        and <b class="about-bold">TestText3.txt</b> into it.
+                                    </p>
+                                    <p><b class="about-bold">TestText1.txt</b> receives the original text fragment of
+                                        <i>This is</i>
+                                    </p>
+                                    <p><b class="about-bold">TestText2.txt</b> receives the original text fragment of
+                                        <i>for demo</i>
+                                    </p>
+                                    <p><b class="about-bold">TestText3.txt</b> receives the original text fragment of
+                                        <i>purpose only!</i>
+                                    </p>
 
-                                        Nam laoreet sed tortor ut rutrum. Curabitur urna elit, interdum non leo vitae,
-                                        porta rhoncus diam. Cras mattis, est at convallis eleifend, risus metus mollis
-                                        dui, vitae placerat metus libero vitae urna. Fusce consectetur metus nec risus
-                                        tempus, non pharetra justo bibendum. Sed ut risus mi. Proin mattis felis vel
-                                        eros venenatis ultricies. Vivamus dictum nunc eu commodo lobortis. Nulla et enim
-                                        eu justo ornare luctus. Donec vitae lacinia lectus. Suspendisse sed tempus nibh.
-                                        Fusce sodales convallis luctus.
-                                        Nam laoreet sed tortor ut rutrum. Curabitur urna elit, interdum non leo vitae,
-                                        porta rhoncus diam. Cras mattis, est at convallis eleifend, risus metus mollis
-                                        dui, vitae placerat metus libero vitae urna. Fusce consectetur metus nec risus
-                                        tempus, non pharetra justo bibendum. Sed ut risus mi. Proin mattis felis vel
-                                        eros venenatis ultricies. Vivamus dictum nunc eu commodo lobortis. Nulla et enim
-                                        eu justo ornare luctus. Donec vitae lacinia lectus. Suspendisse sed tempus nibh.
-                                        Fusce sodales convallis luctus.
-                                        Nam laoreet sed tortor ut rutrum. Curabitur urna elit, interdum non leo vitae,
-                                        porta rhoncus diam. Cras mattis, est at convallis eleifend, risus metus mollis
-                                        dui, vitae placerat metus libero vitae urna. Fusce consectetur metus nec risus
-                                        tempus, non pharetra justo bibendum. Sed ut risus mi. Proin mattis felis vel
-                                        eros venenatis ultricies. Vivamus dictum nunc eu commodo lobortis. Nulla et enim
-                                        eu justo ornare luctus. Donec vitae lacinia lectus. Suspendisse sed tempus nibh.
-                                        Fusce sodales convallis luctus.</p>
+                                    <h3 class="mt-5"><u>Stage 2: File Encryption</u></h3>
+                                    <h5>Overview</h5>
+                                    <p align="center">Simply put, each file receives one of 3 unique
+                                        encryption aglorithms: <a class="about-bold">AES-128</a>, <a
+                                            class="about-bold">RSA key pair</a> and
+                                        <a class="about-bold">SHA-512/256</a>.
+                                    </p>
+                                    <h5>Details</h5>
+                                    <p><b class="about-bold">TestText1.txt</b> has the <a class="about-bold">AES-128</a>
+                                        encryption algorithm applied to its contents. The user is prompted for a custom
+                                        key. The key can be of <b>16-bit</b>, <b>24-bit</b> <i><u>or</u></i>
+                                        <b>32-bit</b> length.
+                                    </p>
+                                    <p><b class="about-bold">TestText2.txt</b> has the <a class="about-bold">RSA key
+                                            pair</a> encryption algorithm applied to its contents. Public and private
+                                        CMS (S/MIME) files and an RSA public private key pair are generated. The CMS
+                                        files are loaded with their respective public private RSA keys. A random
+                                        <b>16-bit</b> session key is generated and encrypted via the <a
+                                            class="about-bold">RSA cipher</a>. The, now encrypted, session key is used
+                                        as the <b>16-bit</b> key to perform <a class="about-bold">AES-128</a> enryption
+                                        on the contents of <b class="about-bold">TestText2</b>.
+                                    </p>
+                                    <p><b class="about-bold">TestText3.txt</b> has the <a
+                                            class="about-bold">SHA-512/256</a> encryption algorithm applied to its
+                                        contents. The unencrypted contents are locally stored in a separate file. The
+                                        contents are then sent through a <a class="about-bold">SHA512</a> hash algorithm
+                                        that is truncated to <b>256-bit</b> length to avoid length attacks.
+                                    </p>
+
+                                    <h3 class="mt-5"><u>Stage 3: File Transfer & Storage</u></h3>
+                                    <h5>Overview</h5>
+                                    <p align="center">Simply put, the encrypted files are sent to the server one by one
+                                        <i>then</i>
+                                        combined into <b>one</b> file and stored.
+                                    </p>
+                                    <h5>Details</h5>
+                                    <h6>Send Files to Server</h6>
+                                    <p>A socket is created and directed to the server's ip address on port 8888. The
+                                        client sends a total of <b>3</b> messages and the server responds to each
+                                        message with a status message.
+                                    </p>
+                                    <p>The <b class="about-bold">first</b> message sends the <i>user's selection</i> of
+                                        <b>store</b>.
+                                    </p>
+                                    <p>The <b class="about-bold">second</b> message sends the <i>size</i> of the file's
+                                        contents in bytes.</p>
+                                    <p>The <b class="about-bold">third</b> message sends the <i>data</i> of the files
+                                        contents. Server-side, a buffer is created based on the file's size and a while
+                                        loop is utilized to catch all packets until the buffer size is less than the
+                                        size of the data received.</p>
+                                    <p>The files are then combined into a singular file and stored in a directory named
+                                        after the file's name. If the directory does not exist, the directory is
+                                        created. All 3 files, with their contents, are deleted on the client system.
+                                        Necessary encryption files are kept on the client system for later decryption.
+                                    </p>
+
+                                    <h6>Receive Files from Server</h6>
+                                    <p>When a user requests to <b>get</b> their file back from the server, the send
+                                        process is repeated in reverse.
+                                    </p>
+                                    <p>When the client receives the data for each text file, the files are re-generated
+                                        on the client system with their respective contents. Upon successful send, the
+                                        server deletes the combined and the file directory.</p>
+
+                                    <h3 class="mt-5"><u>Stage 4: File Decryption & Presentation</u></h3>
+                                    <h5>Overview</h5>
+                                    <p align="center">Simply put, the encrypted files are decrypted <i>then</i>
+                                        recombined into the
+                                        <b>original</b> file.
+                                    </p>
                                 </div>
                                 <hr class="section-separator rounded-circle">
                                 <div class="modal-footer">
@@ -438,29 +522,79 @@
                                     </button>
                                 </div>
                                 <hr class="section-separator rounded-circle">
-                                <div class="modal-body fs-5">
-                                    <p> • Engineered an enterprise-wide automated system to create,
-                                        deliver, audit, and manage 5,000 local administrative account credentials
-                                        with
-                                        supporting technical and end-user documentation</p>
-                                    <p> • Initiated and developed an internal automated incident response
-                                        web application utilizing business critical third-party APIs with supporting
-                                        in-depth documentation and user guides</p>
-                                    <p> • Interfaced with various internal tools to develop and maintain
-                                        end-to-end automated deliverables, addressing numerous core business
-                                        requirements</p>
-                                    <p> • Promptly adjusted existing skillset to accommodate the
-                                        specialized requirements of the asset management tool, Tanium</p>
-                                    <p> • Leveraged Tanium to reliably administer asset management
-                                        solutions to 15,000 machines globally</p>
-                                    <p> • Regularly connected with Tanium account managers to ensure
-                                        business continuity and discuss future Tanium product service enhancements
-                                    </p>
-                                    <p> • Inquisitively researched and actively applied modern technologies
-                                        to diversify existing skillset, deliver sustainable outcomes and elevate
-                                        existing systems</p>
-                                    <p> • Deployed, administered, and managed a 6,000-user Franchisee
-                                        Tanium ecosystem</p>
+                                <div class="modal-body experience-body fs-5">
+                                    <h4>Administrative Details</h4>
+                                    <div>
+                                        <p>
+                                            <span class="experience-bold">Title: </span>Programmer/Analyst I
+                                        </p>
+                                        <p>
+                                            <span class="experience-bold">Dates Employed: </span>November 2020 - Present
+                                        </p>
+                                        <p>
+                                            <span class="experience-bold">Location: </span>Kenosha, WI
+                                        </p>
+                                    </div>
+
+                                    <h4>Primary Responsibilities</h4>
+                                    <div class="experience-wrapper">
+                                        <p class="m-2">
+                                            <i class="las la-hand-point-right"></i>
+                                            Engineered an enterprise-wide automated system to create, deliver, audit,
+                                            and manage 5,000 local administrative account credentials with supporting
+                                            technical and end-user documentation
+                                        </p>
+                                    </div>
+                                    <div class="experience-wrapper">
+                                        <p class="m-2">
+                                            <i class="las la-hand-point-right"></i>
+                                            Initiated and developed an internal automated incident response web
+                                            application utilizing business critical third-party APIs with supporting
+                                            in-depth documentation and user guides
+                                        </p>
+                                    </div>
+                                    <div class="experience-wrapper">
+                                        <p class="m-2">
+                                            <i class="las la-hand-point-right"></i>
+                                            Interfaced with various internal tools to develop and maintain end-to-end
+                                            automated deliverables, addressing numerous core business requirements
+                                        </p>
+                                    </div>
+                                    <div class="experience-wrapper">
+                                        <p class="m-2">
+                                            <i class="las la-hand-point-right"></i>
+                                            Promptly adjusted existing skillset to accommodate the specialized
+                                            requirements of the asset management tool, Tanium
+                                        </p>
+                                    </div>
+                                    <div class="experience-wrapper">
+                                        <p class="m-2">
+                                            <i class="las la-hand-point-right"></i>
+                                            Leveraged Tanium to reliably administer asset management solutions to 15,000
+                                            machines globally
+                                        </p>
+                                    </div>
+                                    <div class="experience-wrapper">
+                                        <p class="m-2">
+                                            <i class="las la-hand-point-right"></i>
+                                            Regularly connected with Tanium account managers to ensure business
+                                            continuity and discuss future Tanium product servicem enhancements
+                                        </p>
+                                    </div>
+                                    <div class="experience-wrapper">
+                                        <p class="m-2">
+                                            <i class="las la-hand-point-right"></i>
+                                            Inquisitively researched and actively applied modern technologies to
+                                            diversify existing skillset, deliver sustainable outcomes and elevate
+                                            existing systems
+                                        </p>
+                                    </div>
+                                    <div class="experience-wrapper">
+                                        <p class="m-2">
+                                            <i class="las la-hand-point-right"></i>
+                                            Deployed, administered, and managed a 6,000-user Franchisee Tanium ecosystem
+                                        </p>
+                                    </div>
                                 </div>
                                 <hr class="section-separator rounded-circle">
                                 <div class="modal-footer">
@@ -496,16 +630,52 @@
                                     </button>
                                 </div>
                                 <hr class="section-separator rounded-circle">
-                                <div class="modal-body fs-5">
-                                    <p> • Used TestComplete, Excel and JavaScript to develop a custom automated test
-                                        suite including unit tests,
-                                        smoke tests, integration tests and acceptance tests</p>
-                                    <p> • Utilized Jira to assign and receive tasks resulting in a clean and agile
-                                        workflow</p>
-                                    <p> • Reformatted the product testing machine and performed user acceptance
-                                        testing
-                                        daily</p>
-                                    <p> • Contributed to weekly standup meetings</p>
+                                <div class="modal-body experience-body fs-5">
+                                    <h4>Administrative Details</h4>
+                                    <div>
+                                        <p>
+                                            <span class="experience-bold">Title: </span>Software Engineer Co-op
+                                        </p>
+                                        <p>
+                                            <span class="experience-bold">Dates Employed: </span>January 2017 - December
+                                            2017
+                                        </p>
+                                        <p>
+                                            <span class="experience-bold">Location: </span>Louisville, Ky
+                                        </p>
+                                    </div>
+
+                                    <h4>Primary Responsibilities</h4>
+                                    <div class=" experience-wrapper">
+                                        <p class="m-2">
+                                            <i class="las la-hand-point-right"></i>
+                                            Used TestComplete, Excel and JavaScript to develop a custom
+                                            automated test
+                                            suite including unit tests, smoke tests, integration tests and
+                                            acceptance
+                                            tests
+                                        </p>
+                                    </div>
+                                    <div class="experience-wrapper">
+                                        <p class="m-2">
+                                            <i class="las la-hand-point-right"></i>
+                                            Utilized Jira to assign and receive tasks resulting in a clean and agile
+                                            workflow
+                                        </p>
+                                    </div>
+                                    <div class="experience-wrapper">
+                                        <p class="m-2">
+                                            <i class="las la-hand-point-right"></i>
+                                            Reformatted the product testing machine and performed user acceptance
+                                            testing daily
+                                        </p>
+                                    </div>
+                                    <div class="experience-wrapper">
+                                        <p class="m-2">
+                                            <i class="las la-hand-point-right"></i>
+                                            Contributed to weekly standup meetings
+                                        </p>
+                                    </div>
                                 </div>
                                 <hr class="section-separator rounded-circle">
                                 <div class="modal-footer">
@@ -543,17 +713,48 @@
                                     </button>
                                 </div>
                                 <hr class="section-separator rounded-circle">
-                                <div class="modal-body fs-5">
-                                    <p> • Responsible for the Fortinet firewall software configuration</p>
-                                    <p> • Communicated with team and company leadership to ensure project deadlines
-                                        were
-                                        met</p>
-                                    <p> • Optimized the packaging process for a large-scale national deployment
-                                        project
-                                    </p>
-                                    <p> • Contacted national store managers regarding networking equipment and
-                                        physical
-                                        configuration</p>
+                                <div class="modal-body experience-body fs-5">
+                                    <h4>Administrative Details</h4>
+                                    <div>
+                                        <p>
+                                            <span class="experience-bold">Title: </span>Firewall Co-op
+                                        </p>
+                                        <p>
+                                            <span class="experience-bold">Dates Employed: </span>July 2018 - August 2018
+                                        </p>
+                                        <p>
+                                            <span class="experience-bold">Location: </span>Kenosha, WI
+                                        </p>
+                                    </div>
+
+                                    <h4>Primary Responsibilities</h4>
+                                    <div class="experience-wrapper">
+                                        <p class="m-2">
+                                            <i class="las la-hand-point-right"></i>
+                                            Responsible for the Fortinet firewall software configuration
+                                        </p>
+                                    </div>
+                                    <div class="experience-wrapper">
+                                        <p class="m-2">
+                                            <i class="las la-hand-point-right"></i>
+                                            Communicated with team and company leadership to ensure project deadlines
+                                            were met
+                                        </p>
+                                    </div>
+                                    <div class="experience-wrapper">
+                                        <p class="m-2">
+                                            <i class="las la-hand-point-right"></i>
+                                            Optimized the packaging process for a large-scale national deployment
+                                            project
+                                        </p>
+                                    </div>
+                                    <div class="experience-wrapper">
+                                        <p class="m-2">
+                                            <i class="las la-hand-point-right"></i>
+                                            Contacted national store managers regarding networking equipment and
+                                            physical configuration
+                                        </p>
+                                    </div>
                                 </div>
                                 <hr class="section-separator rounded-circle">
                                 <div class="modal-footer">
@@ -706,10 +907,13 @@
                                 </div>
                                 <hr class="section-separator rounded-circle">
                                 <div class="modal-body fs-5">
-                                    <object width="100%" height="700px" type="application/pdf"
+                                    <div class="certificate-pdf-body">
+                                        <object width="100%" height="100%" type="application/pdf"
                                         data="./assets/files/CompTIA Security+ ce certificate.pdf?#&scrollbar=0&toolbar=0&navpanes=0">
-                                        <p>Insert your error message here, if the PDF cannot be displayed.</p>
+                                        <p>Unable to display CompTIA Security+ Certificate. I promise I got it. You can
+                                            trust me, i'm an engineer.</p>
                                     </object>
+                                    </div>
                                 </div>
                                 <hr class="section-separator rounded-circle">
                                 <div class="modal-footer">
@@ -938,7 +1142,8 @@
                                 </div>
                                 <a class="link-custom" onClick="clickToCopyEmail()" id="emailAddress"
                                     data-bs-toggle="tooltip" data-bs-custom-class="custom-tooltip"
-                                    data-bs-placement="top" title="Click to copy!">jdford7@gmail.com</a>
+                                    data-bs-placement="top" title="Click to copy!"><i class="las la-copy"></i>
+                                    jdford7@gmail.com </a>
                             </li>
                         </ul>
                     </div>
