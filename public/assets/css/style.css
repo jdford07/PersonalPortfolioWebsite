@@ -126,6 +126,10 @@ img{
     font-size: 24px;
 }
 
+.portfolio-bottom-box>ul>i:hover{
+    color: var(--color-link);
+}
+
 .custom-tooltip {
     --bs-tooltip-bg: rgb(17, 28, 46);
     --bs-tooltip-color: var(--color-link);
