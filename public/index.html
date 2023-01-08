@@ -451,18 +451,136 @@
                                 </div>
                                 <hr class="section-separator rounded-circle">
                                 <div class="modal-body fs-5">
-                                    <h3 align="center">Portfolio Website Pipeline</h3>
-                                    <div>
-                                        <p>
-                                            <span class="experience-bold">CI Tools: </span>Git, GitHub & GitHub Actions
-                                        </p>
-                                        <p>
-                                            <span class="experience-bold">CD Tools: </span>AWS S3, AWS CloudFront, AWS
-                                            Route53
-                                            and AWS Lambda
-                                        </p>
+                                    <div class="card tab-pane active cicd-card" id="customCICDCard">
+                                        <div class="card-header">
+                                            <ul class="nav nav-tabs card-header-tabs" data-bs-tabs="tabs">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active nav-card-link" aria-current="true"
+                                                        data-bs-toggle="tab" href="#portfolioPipeline">Portfolio</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link nav-card-link" data-bs-toggle="tab"
+                                                        href="#consolidatePipline">Consolidate</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="card-body tab-content">
+                                            <div class="tab-pane active" id="portfolioPipeline">
+                                                <h2 class="card-title text-center">Portfolio Website Pipeline</h2>
+                                                <div>
+                                                    <p>
+                                                        <span class="experience-bold">CI Tools: </span>Git, GitHub,
+                                                        GitHub Actions & AWS IAM
+                                                    </p>
+                                                    <p>
+                                                        <span class="experience-bold">CD Tools: </span>AWS S3, AWS
+                                                        CloudFront, AWS Route53 and AWS Lambda
+                                                    </p>
+                                                    <p>
+                                                        <span class="experience-bold">Description: </span>This
+                                                        simple pipeline serves the static website you're currently
+                                                        viewing. The AWS S3 bucket is automatically updated, via
+                                                        GitHub Actions, when a push request is detected to the
+                                                        associated GitHub project. The AWS CloudFront global
+                                                        distribution is automatically invalidated, via AWS Lambda,
+                                                        when an update to the associated AWS S3 bucket is detected.
+                                                    </p>
+                                                    <p>
+                                                        <span class="experience-bold">ELI5 Description: </span>When
+                                                        I change the website on my computer, you will see the change
+                                                        <i>very</i> quickly without me touching anything.
+                                                    </p>
+                                                </div>
+                                                <h4 class="text-center">Continuous Integration Details</h4>
+                                                <p>Upon a push request to the <a class="about-bold">main branch</a> of
+                                                    the
+                                                    <a class="link-custom"
+                                                        href="https://github.com/jdford07/PersonalPortfolioWebsite"
+                                                        target="_blank">personal portfolio website
+                                                        <i class="las la-external-link-alt"></i>
+                                                    </a>
+                                                    <a class="about-bold">GitHub</a> project, a <a
+                                                        class="about-bold">GitHub Action</a> is triggered to update
+                                                    the <a class="about-bold">AWS S3</a> bucket hosting the contents
+                                                    of the project.
+                                                </p>
+                                                <p>The <a class="about-bold">AWS S3</a> bucket update is serviced by
+                                                    an <a class="about-bold">AWS IAM</a> user specifically
+                                                    configured for pipeline requests. The
+                                                    <a class="about-bold">GitHub Action</a> utilizes the
+                                                    <a class="about-bold">AWS IAM</a> user's credentials to gain
+                                                    access to and update the contents of the
+                                                    <a class="about-bold">AWS S3</a> bucket.
+                                                </p>
+                                                <p>
+                                                    The <a class="about-bold">GitHub Action</a> sends the below
+                                                    command to the <a class="about-bold">AWS S3</a> bucket. The
+                                                    <code>sync</code> command will copy new and updated files from
+                                                    the source <a class="about-bold">GitHub</a> project to the
+                                                    <a class="about-bold">AWS S3</a> bucket. The
+                                                    <code>--delete</code> switch will delete any files that exist in
+                                                    the destination <a class="about-bold">AWS S3</a> bucket and
+                                                    <i>NOT</i> in the source <a class="about-bold">GitHub</a>
+                                                    project.
+                                                <div class="text-center">
+                                                    <code>run: aws s3 sync ./public/ s3://www.jdfordjr.com --delete</code>
+                                                </div>
+                                                </p>
+
+                                                <h4 class="text-center">Continuous Deployment Details</h4>
+                                                <p>
+                                                    Utilizing <a class="about-bold">AWS Route53</a> this website is
+                                                    currently hosting HTTP and HTTPS versions. Meaning there are
+                                                    <i>2</i> <a class="about-bold">AWS CloudFront</a> distributions to
+                                                    account for.
+                                                </p>
+                                                <p>
+                                                    Using <a class="about-bold">AWS Lambda</a> we can
+                                                    create a <i>dynamic</i> lambda function to automatically invalidate
+                                                    each <a class="about-bold">AWS CloudFront</a> distribution upon the
+                                                    associated <a class="about-bold">AWS S3</a> bucket receiving an
+                                                    update. One lambda event for HTTP and one lambda event for
+                                                    HTTPS.
+                                                </p>
+                                                <p>
+                                                    Since we want to update the entire website each time the <a
+                                                        class="about-bold">AWS S3</a> bucket is updated, the <a
+                                                        class="about-bold">AWS CloudFront</a> invalidation will simply
+                                                    be: <code>/*</code>
+                                                </p>
+                                                <p>
+                                                    The <a class="about-bold">AWS Lambda</a> function is written in <a
+                                                        class="about-bold">Python</a> utilizing the <code>boto3</code>
+                                                    library to directly interact with the AWS SDK. To target both <a
+                                                        class="about-bold">AWS CloudFront</a> distributions, environment
+                                                    variable functionality from the <code>os</code> library is used to
+                                                    access each distribution ID.
+                                                </p>
+                                            </div>
+                                            <div class="tab-pane" id="consolidatePipline">
+                                                <h2 class="card-title text-center">Consolidate WebApp Pipeline</h2>
+                                                <div>
+                                                    <p>
+                                                        <span class="experience-bold">CI Tools: </span>Coming soon!
+                                                    </p>
+                                                    <p>
+                                                        <span class="experience-bold">CD Tools: </span>Coming soon!
+                                                    </p>
+                                                    <p>
+                                                        <span class="experience-bold">Description: </span>Coming soon!
+                                                    </p>
+                                                    <p>
+                                                        <span class="experience-bold">ELI5 Description: </span>Coming
+                                                        soon!
+                                                    </p>
+                                                </div>
+                                                <h4 class="text-center">Continuous Integration Details</h4>
+                                                <p>Coming soon!</p>
+                                                <h4 class="text-center">Continuous Deployment Details</h4>
+                                                <p>Coming soon!</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <p>This simple pipeline serves the current static website you're viewing. </p>
                                 </div>
                                 <hr class="section-separator rounded-circle">
                                 <div class="modal-footer">
