@@ -529,13 +529,15 @@
 
                                                 <h4 class="text-center">Continuous Deployment Details</h4>
                                                 <p>
-                                                    Utilizing <a class="about-bold">AWS Route53</a> this website is
-                                                    currently hosting HTTP and HTTPS versions. Meaning there are
+                                                    Utilizing <a class="about-bold">AWS S3</a> and <a
+                                                        class="about-bold">AWS Route53</a>, this website is
+                                                    currently hosting HTTP and HTTPS versions (the HTTP bucket redirects
+                                                    to the HTTPS bucket). Meaning there are
                                                     <i>2</i> <a class="about-bold">AWS CloudFront</a> distributions to
                                                     account for.
                                                 </p>
                                                 <p>
-                                                    Using <a class="about-bold">AWS Lambda</a> we can
+                                                    Using <a class="about-bold">AWS Lambda</a>, we can
                                                     create a <i>dynamic</i> lambda function to automatically invalidate
                                                     each <a class="about-bold">AWS CloudFront</a> distribution upon the
                                                     associated <a class="about-bold">AWS S3</a> bucket receiving an
