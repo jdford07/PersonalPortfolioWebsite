@@ -3,12 +3,12 @@
 :root{
     --color-body: #dbe6e7;
     --color-heading: #eef3db;
-    --color-base: #192844;
-    --color-base2: #20243f;
-    --color-brand: #f53779;
-    --color-brand2: #ec6abb;
-    --color-link: #41e6d5 ;
-    --color-link2: #b1fff5;
+    --color-base: #2b261f;
+    --color-base2: #1d1914;
+    --color-brand: #fff256;
+    --color-brand2: #f8f09b;
+    --color-link: #49e422;
+    --color-link2: #aef89c;
     --color-misc: #f8f0c8;
     --sidebar-width: 325px;
     --font-base: "Bai Jamjuree"
@@ -488,19 +488,26 @@ code{
 
 @media (min-width: 992px){
     body{
-        background: linear-gradient(rgb(32, 36, 63, 0.98), rgb(32, 36, 63, 0.98)), url('https://i.pinimg.com/originals/4d/15/5c/4d155c6f7e5b1c6942059703c403ecaf.jpg');
+        background: linear-gradient(rgba(29, 25, 20, 0.98), rgba(29, 25, 20, 0.98));
         background-attachment: fixed;
-        background-size: cover;
-        background-position: 120px center;
+        background-size: contain;
+        background-position: center;
         background-repeat: no-repeat;
     }
-
+    /* .navbar{
+        min-height: 100vh;
+        width: var(--sidebar-width);
+        background: linear-gradient(rgba(41, 11, 38, 0.2), rgba(82, 71, 16, 0.8)), url(../images/CafeInside.gif);
+        background-size: cover;
+        background-position: 95%;
+        box-shadow: -5px 0px 30px 0px black;
+    } */
     .navbar{
         min-height: 100vh;
         width: var(--sidebar-width);
-        background: linear-gradient(rgba(41, 11, 38, 0.2), rgba(82, 21, 76, 0.8)), url(../images/game-off-gif.gif);
+        background: linear-gradient(rgba(41, 11, 38, 0.2), rgba(82, 71, 16, 0.8)), url(../images/OutsideBakery.gif);
         background-size: cover;
-        background-position: 40%;
+        background-position: 10%;
         box-shadow: -5px 0px 30px 0px black;
     }
 

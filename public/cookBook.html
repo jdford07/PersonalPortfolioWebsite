@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jd Ford's SWE Portfolio</title>
+    <title>Jd Ford's Cook Book</title>
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/aos.css">
     <link rel="stylesheet" href="./assets/css/line-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/cookBookstyle.css">
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar">
@@ -29,33 +30,28 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto flex-lg-column text-lg-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home" onclick="collapseNavBar()" data-aos="flip-down"
-                            data-aos-duration="1000">Home</a>
+                        <a class="nav-link" href="#cookBook" onclick="collapseNavBar()" data-aos="flip-down"
+                            data-aos-duration="1000">Cook Book</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio" onclick="collapseNavBar()" data-aos="flip-down"
-                            data-aos-delay="100" data-aos-duration="1000">Portfolio</a>
+                        <a class="nav-link" href="#mealPlanner" onclick="collapseNavBar()" data-aos="flip-down"
+                            data-aos-delay="100" data-aos-duration="1000">Meal Planner</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#consolidate" onclick="collapseNavBar()" data-aos="flip-down"
-                            data-aos-delay="200" data-aos-duration="1000">Consolidate</a>
+                        <a class="nav-link" href="#recipeBuilder" onclick="collapseNavBar()" data-aos="flip-down"
+                            data-aos-delay="200" data-aos-duration="1000">Recipe Builder</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#recipeList" onclick="collapseNavBar()" data-aos="flip-down"
+                            data-aos-delay="300" data-aos-duration="1000">Recipe List</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#webApps" onclick="collapseNavBar()" data-aos="flip-down"
-                            data-aos-delay="300" data-aos-duration="1000">Web Apps</a>
+                            data-aos-delay="400" data-aos-duration="1000">Web Apps</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./assets/files/Ford_Resume2023.pdf" target="_blank"
-                            onclick="collapseNavBar()" data-aos="flip-down" data-aos-delay="400"
-                            data-aos-duration="1000">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#aboutme" onclick="collapseNavBar()" data-aos="flip-down"
-                            data-aos-delay="500" data-aos-duration="1000">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact" onclick="collapseNavBar()" data-aos="flip-down"
-                            data-aos-delay="600" data-aos-duration="1000">Contact</a>
+                        <a class="nav-link" href="index.html" onclick="collapseNavBar()" data-aos="flip-down"
+                            data-aos-delay="500" data-aos-duration="1000"><i class="las la-undo"></i> Homepage</a>
                     </li>
                 </ul>
             </div>
@@ -67,36 +63,18 @@
     <div id="content-wrapper">
 
         <!-- HOME -->
-        <section id="home" class="full-height px-lg-5">
+        <section id="cookBook" class="full-height px-lg-5">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="display-3 fw-bold" data-aos="zoom-out-left" data-aos-duration="1000">I'm
-                            Jd, a <span class="text-brand">Software Engineer</span>
-                            passionate about <i>automation</i></h1>
-                        <p class="lead mt-4 ms-2" data-aos="zoom-out-left" data-aos-delay="300"
-                            data-aos-duration="1000">I'm
-                            glad you're here! Don't hesitate to poke around.
+                        <h1 class="display-3 fw-bold text-center" data-aos="zoom-out-left" data-aos-duration="1000">
+                            Welcome to Jd's <span class="text-brand">Cook Book</span>!</h1>
+                        <p class="lead mt-4 ms-2 text-center" data-aos="zoom-out-left" data-aos-delay="300"
+                            data-aos-duration="1000">Here you can automatically
+                            <a href=#mealPlanner class="link-custom">plan your meals</a>,
+                            <a href=#recipeList class="link-custom">explore new recipes,</a> or
+                            <a href=#recipeBuilder class="link-custom">submit your own recipe</a>!
                         </p>
-                        <p class="lead mt-2 mb-4 ms-2" data-aos="zoom-out-left" data-aos-delay="300"
-                            data-aos-duration="1000">
-                            Feel free to
-                            <a href=#portfolio class="link-custom">explore my portfolio</a> of personal projects, <a
-                                href="#consolidate" class="link-custom">
-                                play with Consolidate</a>, my web application, or <a href="#aboutme"
-                                class="link-custom"> learn more about <i>me</i></a>!
-                        </p>
-                        <div class="mt-5 home-bottom" data-aos="zoom-out-left" data-aos-delay="500"
-                            data-aos-duration="1000">
-                            <div class="ms-2">
-                                <a href="./assets/files/Ford_Resume2023.pdf" class="btn btn-brand me-3"
-                                    target="_blank">View My Resume <i class="las la-external-link-alt"></i></a>
-                            </div>
-                            <div class="m-2">
-                                <a href="#contact" class="link-custom">E-mail: jdford7@gmail.com</a>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -1154,7 +1132,7 @@
                             <p>Serve requested information from Twitch, Youtube and various news
                                 websites</p>
                             <div class="portfolio-bottom-box col-md-12">
-                                <a href="#" class="link-custom">Visit Web App</a>
+                                <a href="#" data-bs-toggle="modal" class="link-custom">Visit Web App</a>
                             </div>
                         </div>
                     </div>
@@ -1166,7 +1144,7 @@
                             <h2 class="mt-4 mb-2 text-center">Cook Book</h2>
                             <p>Find easy recipes and automatically plan your week night meals</p>
                             <div class="portfolio-bottom-box col-md-12">
-                                <a href="cookBook.html" class="link-custom">Visit Web App</a>
+                                <a href="#" data-bs-toggle="modal" class="link-custom">Visit Web App</a>
                             </div>
                         </div>
                     </div>
