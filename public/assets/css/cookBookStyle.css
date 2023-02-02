@@ -3,12 +3,12 @@
 :root{
     --color-body: #dbe6e7;
     --color-heading: #eef3db;
-    --color-base: #768b78;
-    --color-base2: #5f7161;
+    --color-base: #5F7161;
+    --color-base2: #576759;
     --color-brand: #fff58a;
     --color-brand2: #f8f09b;
-    --color-link: #FF9F9F;
-    --color-link2: #ffcdcd;
+    --color-link: #b2ff9f;
+    --color-link2: #d5ffcd;
     --color-misc: #f8f0c8;
     --sidebar-width: 325px;
     --font-base: "Bai Jamjuree"
@@ -487,11 +487,11 @@ code{
 }
 
 .navbar .nav-link:hover{
-    color: var(--color-link);
+    color: var(--color-brand);
 }
 
 .navbar .nav-link.active{
-    color: var(--color-link);
+    color: var(--color-brand);
 }
 
 @media (min-width: 992px){
