@@ -198,7 +198,7 @@ code{
     height: 60%;
     margin: 10%;
     font-size: large;
-    text-shadow: 2px 2px black;
+    text-shadow: 2px 2px 3px black;
 }
 
 .cookBookPanel{
