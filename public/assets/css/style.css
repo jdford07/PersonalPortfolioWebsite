@@ -89,7 +89,8 @@ code{
 }
 
 .shadow-effect:hover{
-    box-shadow: -6px 6px 0 0px var(--color-brand);
+    box-shadow: -6px 6px 5px var(--color-brand);
+    transition: all .25s;
 }
 
 .center-text{
@@ -180,6 +181,43 @@ code{
 
 .contact-iconbox:hover{
     box-shadow: 2px 2px 3px 1px rgb(0,0,0);
+}
+
+.webAppPanel{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.webAppPanel>p{
+    display: flex;
+    align-items: center;
+    height: 60%;
+    margin: 10%;
+    font-size: large;
+    text-shadow: 2px 2px black;
+}
+
+.cookBookPanel{
+    height: 60vh;
+    background: linear-gradient(rgba(25, 40, 68, 0.7), rgba(25, 40, 68, .7)), url(../images/GrandmaFoodTruck.gif);
+    background-attachment: scroll;
+    background-position: center 58%;
+}
+
+.consolidatePanel{
+    height: 60vh;
+    background: linear-gradient(rgba(25, 40, 68, 0.7), rgba(25, 40, 68, .7)), url(../images/MarioOffice.gif);
+    background-attachment: scroll;
+    background-position: center 70%;
+}
+
+.webApp-bottom-box{
+    font-size: x-large;
+    text-shadow: 2px 2px var(--color-base);
 }
 
 /* MY NOTES */

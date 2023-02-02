@@ -32,6 +32,14 @@ h1,h2,h3,h4,h5,h6{
     text-shadow: 2px 2px #000000;
 }
 
+p{
+    text-shadow: 1px 1px black;
+}
+
+span{
+    text-shadow: 1px 1px black;
+}
+
 a{
     text-decoration: none;
     color: var(--color-body);
@@ -512,7 +520,7 @@ code{
     }
 
     .navbar-brand img{
-        border: 6px solid var(--color-base2);
+        border: 6px solid var(--color-brand2);
     }
 
     .nav-link{
