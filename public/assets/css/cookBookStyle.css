@@ -3,12 +3,12 @@
 :root{
     --color-body: #dbe6e7;
     --color-heading: #eef3db;
-    --color-base: #2b261f;
-    --color-base2: #1d1914;
-    --color-brand: #fff256;
+    --color-base: #768b78;
+    --color-base2: #5f7161;
+    --color-brand: #fff58a;
     --color-brand2: #f8f09b;
-    --color-link: #49e422;
-    --color-link2: #aef89c;
+    --color-link: #FF9F9F;
+    --color-link2: #ffcdcd;
     --color-misc: #f8f0c8;
     --sidebar-width: 325px;
     --font-base: "Bai Jamjuree"
@@ -488,7 +488,7 @@ code{
 
 @media (min-width: 992px){
     body{
-        background: linear-gradient(rgba(29, 25, 20, 0.98), rgba(29, 25, 20, 0.98));
+        background: linear-gradient(rgba(95, 113, 97, 0.98), rgba(95, 113, 97, 0.98));
         background-attachment: fixed;
         background-size: contain;
         background-position: center;
@@ -512,7 +512,7 @@ code{
     }
 
     .navbar-brand img{
-        border: 6px solid var(--color-base);
+        border: 6px solid var(--color-base2);
     }
 
     .nav-link{
@@ -568,7 +568,8 @@ code{
 .link-custom{
     font-weight: 700;
     position: relative;
-    color: var(--color-link)
+    color: var(--color-link);
+    text-shadow: 1px 1px black;
 }
 
 .link-custom::after{
