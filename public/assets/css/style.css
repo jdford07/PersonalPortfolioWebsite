@@ -143,6 +143,13 @@ code{
     text-shadow: 1px 1px 3px black;
 }
 
+/* .portfolio:hover{
+    background: linear-gradient(rgba(25, 40, 68, 1),rgba(25, 40, 68, 0.8), rgba(25, 40, 68, 1)), url("https://media.tenor.com/zMdZBjJ7gPkAAAAd/aesthetic-wallpaper.gif");
+    background-size: 125% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+} */
+
 .under-construction{
     display:flex;
     margin: auto;
@@ -197,9 +204,24 @@ code{
     align-items: center;
     height: 60%;
     margin: 10%;
-    font-size: large;
+    font-size: 20px;
     text-shadow: 2px 2px 3px black;
 }
+
+.webAppPanel>h2{
+    transition: all 0.4s;
+}
+
+.webAppPanel:hover>h2{
+    color: var(--color-brand);
+    transition: all 0.4s;
+}
+
+
+.webAppPanel:hover>div>a{
+    color: var(--color-link2);
+}
+
 
 .cookBookPanel{
     height: 60vh;
