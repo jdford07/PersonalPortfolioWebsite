@@ -221,8 +221,12 @@ img{
     text-decoration: none;
 }
 
-.nav-link-notes:hover, .nav-link-notes.active{
+.nav-link-notes.active{
     color: var(--color-brand);
+}
+
+.nav-link-notes:hover{
+    color: var(--color-brand2);
 }
 
 .card{
