@@ -183,7 +183,7 @@ code{
     font-size: 64px;
     background-color: var(--color-brand);
     color: var(--color-base);
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
 
 .contact-iconbox:hover{
