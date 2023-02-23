@@ -217,6 +217,21 @@ code{
     transition: all 0.4s;
 }
 
+.webAppPanel>div>a::after{
+    content:"";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-link2);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+.webAppPanel:hover>div>a::after{
+    color: var(--color-link2);
+    width: 100%;
+}
 
 .webAppPanel:hover>div>a{
     color: var(--color-link2);
