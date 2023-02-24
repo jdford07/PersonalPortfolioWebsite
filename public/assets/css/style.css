@@ -103,7 +103,6 @@ code{
     --bs-tooltip-opacity: 1;
 }
 
-
 .home-bottom{
     display: flex;
     align-items: center;
@@ -190,6 +189,136 @@ code{
     box-shadow: 2px 2px 3px 1px rgb(0,0,0);
 }
 
+/* CONSOLIDATE */
+.la-search{
+    transform: scaleX(-1);
+}
+
+.consolidateOSRS{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/OSRSBackgroundSite.jpg);
+    background-position: center;
+    background-size: contain;
+    height: 60vh;
+}
+
+.consolidateOSRSTop{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.consolidateOSRSTop>h2{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.consolidateOSRSTop>ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.consolidateOSRSTop>ul>li:not(:last-child){
+    margin-right: 7px;
+}
+
+.consolidateOSRSTop>ul>li>button>i{
+    font-size: 24px;
+}
+
+.consolidateOSRSBody{
+    margin-top: 16px;
+    margin-right: 16px;
+    margin-left: 16px;
+    margin-bottom: none;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.consolidateOSRSBody::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+.consolidateOSRSBody>ul{
+    padding: 0;
+}
+
+.consolidateOSRSBody>ul>a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.consolidateOSRSBody>ul>a:not(:first-child)>li{
+    margin-top: 10px;
+}
+
+.OSRSNewsArticle{
+    background: url(../images/OSRSBackground.gif);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 1rem;
+    border: 3px solid rgba(0,0,0,0);
+    transition: all 0.2s;
+}
+
+.OSRSNewsArticle:hover{
+    border: 3px solid #90c040;
+    box-shadow: 2px 2px 3px rgba(0,0,0,1);
+    transition: all 0.2s ease-in;
+}
+
+.OSRSNewsArticle>img{
+    margin: 2%;
+    width: 150px;
+    height: 90px;
+    transition: all 0.2s;
+}
+
+.OSRSNewsArticle:hover>img{
+    box-shadow: 2px 2px 2px rgba(0,0,0,1);
+    transition: all 0.2s;
+}
+
+.OSRSNewsArticleInfo{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 4px;
+    transition: all 0.4s;
+}
+
+.OSRSNewsArticleInfo>h5{
+    text-align: center;
+    margin-bottom: 0;
+    transition: all 0.4s;
+}
+
+.OSRSNewsArticleInfo>span{
+    text-align: center;
+}
+
+.OSRSNewsArticleInfo>span, .OSRSNewsArticleInfo>p{
+    color: black;
+}
+
+.OSRSNewsArticle:hover>div>h5{
+    color: #b67015;
+    transition: all 0.4s;
+}
+
+
+/* CONSOLIDATE END */
+
+/* WEB APPLICATIONS */
 .webAppPanel{
     display: flex;
     flex-direction: column;
@@ -256,6 +385,7 @@ code{
     font-size: x-large;
     text-shadow: 2px 2px var(--color-base);
 }
+/* WEB APPLICATIONS END */
 
 /* MY NOTES */
 
@@ -633,6 +763,19 @@ code{
     background-color: var(--color-brand2);
     color: var(--color-base);
     border-color: var(--color-brand2);
+}
+
+.btn-OSRS{
+    padding: 5px 7px;
+    background-image: url(../images/OSRSButton.gif);
+    background-size: contain;
+    color: var(--color-heading);
+}
+
+.btn-OSRS:hover{
+    background-color: var(--color-brand2);
+    color: #90c040;
+    border-color: #90c040;
 }
 
 /* BUTTON END */

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar">
+<body data-bs-spy="scroll" data-bs-target=".navbar" onload="loadConsolidate()">
 
     <!-- NAVBAR  -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -46,8 +46,8 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./assets/files/Ford_Resume2023.pdf" target="_blank"
-                            onclick="collapseNavBar()" data-aos="flip-down" data-aos-delay="400"
-                            data-aos-duration="1000">Resume</a>
+                            rel="noopener noreferrer" onclick="collapseNavBar()" data-aos="flip-down"
+                            data-aos-delay="400" data-aos-duration="1000">Resume</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#aboutme" onclick="collapseNavBar()" data-aos="flip-down"
@@ -89,8 +89,9 @@
                         <div class="mt-5 home-bottom" data-aos="zoom-out-left" data-aos-delay="500"
                             data-aos-duration="1000">
                             <div class="ms-2">
-                                <a href="./assets/files/Ford_Resume2023.pdf" class="btn btn-brand me-3"
-                                    target="_blank">View My Resume <i class="las la-external-link-alt"></i></a>
+                                <a href="./assets/files/Ford_Resume2023.pdf" class="btn btn-brand me-3" target="_blank"
+                                    rel="noopener noreferrer">View My Resume <i
+                                        class="las la-external-link-alt"></i></a>
                             </div>
                             <div class="m-2">
                                 <a href="#contact" class="link-custom">E-mail: jdford7@gmail.com</a>
@@ -168,7 +169,7 @@
                                             class="about-bold">highly</a> encourage you to read my
                                         <a class="link-custom"
                                             href="./assets/files/SecureCloudFileStorage/Secure Cloud File Storage System Report.pdf"
-                                            target="_blank">detailed engineering report <i
+                                            target="_blank" rel="noopener noreferrer">detailed engineering report <i
                                                 class="las la-external-link-alt"></i>
                                         </a> containing in-depth implementation details alongside measured performance
                                         testing results.
@@ -515,7 +516,8 @@
                                                     the
                                                     <a class="link-custom"
                                                         href="https://github.com/jdford07/PersonalPortfolioWebsite"
-                                                        target="_blank">personal portfolio website
+                                                        target="_blank" rel="noopener noreferrer">personal portfolio
+                                                        website
                                                         <i class="las la-external-link-alt"></i>
                                                     </a>
                                                     <a class="about-bold">GitHub</a> project, a <a
@@ -1069,13 +1071,112 @@
                     <div class="col-lg-12">
                         <h5 class="text-brand" data-aos="zoom-out-left" data-aos-duration="1000">CONSOLIDATE</h5>
                         <h1 class="display-5 fw-bold" data-aos="zoom-out-left" data-aos-delay="100"
-                            data-aos-duration="1000">Consolidate Web
-                            Application
-                        </h1>
+                            data-aos-duration="1000">Consolidate Web Application </h1>
                     </div>
                 </div>
 
                 <div class="row">
+                    <div class="lead col-md-10 pb-5 d-flex flex-column align-items-center" data-aos="zoom-in"
+                        data-aos-delay="100" data-aos-duration="1000">
+                        <p>Section description</p>
+                    </div>
+
+                    <!-- Consolidate -->
+                    <div class="col-md-5 pb-4 consolidateWrapper" data-aos="fade-up" data-aos-delay="100"
+                        data-aos-duration="1000">
+                        <div class="consolidateOSRS p-4 rounded-4 shadow-effect">
+                            <div class="consolidateOSRSTop m-2">
+                                <h2 class="">OSRS News Articles</h2>
+                                <ul>
+                                    <li>
+                                        <button class="btn btn-OSRS">
+                                            <i class="las la-search"></i>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="btn btn-OSRS">
+                                            <i class="las la-redo-alt"></i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="consolidateOSRSBody">
+                                <ul>
+                                    <a id="Article1" href="" target="_blank" rel="noopener noreferrer">
+                                        <li class="OSRSNewsArticle rounded-4">
+                                            <img class="rounded-2" src="" alt="Article Thumbnail">
+                                            <div class="OSRSNewsArticleInfo">
+                                                <h5>Title</h5>
+                                                <span>Update Type</span>
+                                                <p>Update Description</p>
+                                            </div>
+                                        </li>
+                                    </a>
+                                    <a id="Article2" href="" target="_blank" rel="noopener noreferrer">
+                                        <li class="OSRSNewsArticle rounded-4">
+                                            <img class="rounded-2" src="" alt="Article Thumbnail">
+                                            <div class="OSRSNewsArticleInfo">
+                                                <h5>Title</h5>
+                                                <span>Update Type</span>
+                                                <p>Update Description</p>
+                                            </div>
+                                        </li>
+                                    </a>
+                                    <a id="Article3" href="" target="_blank" rel="noopener noreferrer">
+                                        <li class="OSRSNewsArticle rounded-4">
+                                            <img class="rounded-2" src="" alt="Article Thumbnail">
+                                            <div class="OSRSNewsArticleInfo">
+                                                <h5>Title</h5>
+                                                <span>Update Type</span>
+                                                <p>Update Description</p>
+                                            </div>
+                                        </li>
+                                    </a>
+                                    <a id="Article4" href="" target="_blank" rel="noopener noreferrer">
+                                        <li class="OSRSNewsArticle rounded-4">
+                                            <img class="rounded-2" src="" alt="Article Thumbnail">
+                                            <div class="OSRSNewsArticleInfo">
+                                                <h5>Title</h5>
+                                                <span>Update Type</span>
+                                                <p>Update Description</p>
+                                            </div>
+                                        </li>
+                                    </a>
+                                    <a id="Article5" href="" target="_blank" rel="noopener noreferrer">
+                                        <li class="OSRSNewsArticle rounded-4">
+                                            <img class="rounded-2" src="" alt="Article Thumbnail">
+                                            <div class="OSRSNewsArticleInfo">
+                                                <h5>Title</h5>
+                                                <span>Update Type</span>
+                                                <p>Update Description</p>
+                                            </div>
+                                        </li>
+                                    </a>
+                                </ul>
+                                <div class="webApp-bottom-box">
+                                    <a></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Consolidate End -->
+
+                    <!-- Cook Book -->
+                    <div class="col-md-5 pb-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                        <div class="webAppPanel cookBookPanel p-4 rounded-4 shadow-effect"
+                            onclick="location.href='cookBook.html';" style="cursor:pointer">
+                            <h2 class="mt-4 mb-2 text-center">Cook Book</h2>
+                            <p>Find easy recipes and automatically plan your week night meals</p>
+                            <div class="webApp-bottom-box">
+                                <a href="cookBook.html" class="link-custom">Visit Web App <i
+                                        class="las la-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cook Book End -->
+                </div>
+
+                <!-- <div class="row">
                     <div class="lead col-md-10 pb-5 d-flex flex-column align-items-center" data-aos="zoom-in"
                         data-aos-delay="100" data-aos-duration="1000">
                         <h2>What's coming?</h2>
@@ -1128,7 +1229,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
 
         </section>
         <!-- CONSOLIDATE END -->
@@ -1213,8 +1314,10 @@
                                 </p>
                                 <p>On weekdays, you'll catch me
                                     <a href="https://derbyfestivalmarathon.com/" target="_blank"
-                                        class="link-custom">marathon training</a>, practicing French on
-                                    <a href="https://en.duolingo.com/" target="_blank" class="link-custom">Duolingo</a>,
+                                        rel="noopener noreferrer" class="link-custom">marathon training</a>, practicing
+                                    French on
+                                    <a href="https://en.duolingo.com/" target="_blank" rel="noopener noreferrer"
+                                        class="link-custom">Duolingo</a>,
                                     developing <a href="#portfolio" class="link-custom">personal projects</a>
                                     <i>and</i> cheffing up something absolutely <b>delicious</b> in the kitchen.
                                     I deeply value the physical and mental health benefits of long distance running, it
@@ -1291,14 +1394,16 @@
                                             data-bs-custom-class="custom-tooltip" data-bs-placement="bottom"
                                             title="LinkedIn">
                                             <a href="https://www.linkedin.com/in/john-david-ford-jr-7b010712a/"
-                                                target="_blank"> <i class="lab la-linkedin contact-icon"></i></a>
+                                                target="_blank" rel="noopener noreferrer"> <i
+                                                    class="lab la-linkedin contact-icon"></i></a>
                                         </div>
                                     </li>
                                     <li>
                                         <div class="about-icon rounded-5" data-bs-toggle="tooltip"
                                             data-bs-custom-class="custom-tooltip" data-bs-placement="bottom"
                                             title="GitHub">
-                                            <a href="https://github.com/jdford07" target="_blank">
+                                            <a href="https://github.com/jdford07" target="_blank"
+                                                rel="noopener noreferrer">
                                                 <i class="lab la-github contact-icon"></i></a>
                                         </div>
                                     </li>
@@ -1332,9 +1437,11 @@
                         <p>
                             Send me a message on
                             <a href="https://www.linkedin.com/in/john-david-ford-jr-7b010712a/" class="link-custom"
-                                target="_blank">LinkedIn</a>, through E-mail or dial my digits for a short phone call.
+                                target="_blank" rel="noopener noreferrer">LinkedIn</a>, through E-mail or dial my digits
+                            for a short phone call.
                             If you'd like to explore the source code for a few of my personal projects, my
-                            <a href="https://github.com/jdford07" class="link-custom" target="_blank">GitHub</a> can be
+                            <a href="https://github.com/jdford07" class="link-custom" target="_blank"
+                                rel="noopener noreferrer">GitHub</a> can be
                             found below as well.
                         </p>
                     </div>
@@ -1350,7 +1457,7 @@
                                         title="LinkedIn"></i>
                                 </div>
                                 <a href="https://www.linkedin.com/in/john-david-ford-jr-7b010712a/" class="link-custom"
-                                    target="_blank">John David Ford, Jr.</a>
+                                    target="_blank" rel="noopener noreferrer">John David Ford, Jr.</a>
                             </li>
                             <li data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000">
                                 <div class="contact-iconbox rounded-4">
@@ -1373,7 +1480,8 @@
                                         data-bs-custom-class="custom-tooltip" data-bs-placement="top"
                                         title="GitHub"></i>
                                 </div>
-                                <a href="https://github.com/jdford07" class="link-custom" target="_blank">jdford07</a>
+                                <a href="https://github.com/jdford07" class="link-custom" target="_blank"
+                                    rel="noopener noreferrer">jdford07</a>
                             </li>
                             <li data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">
                                 <div class="contact-iconbox rounded-4">
@@ -1381,8 +1489,9 @@
                                         data-bs-custom-class="custom-tooltip" data-bs-placement="top"
                                         title="Phone Number"></i>
                                 </div>
-                                <a href="./assets/files/Ford_Resume2023.pdf" class="link-custom"
-                                    target="_blank">Available Inside Resume</a>
+                                <a href="./assets/files/Ford_Resume2023.pdf" class="link-custom" target="_blank"
+                                    rel="noopener noreferrer">Available
+                                    Inside Resume</a>
                             </li>
                         </ul>
                     </div>

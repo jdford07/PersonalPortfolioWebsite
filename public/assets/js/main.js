@@ -65,3 +65,17 @@ function collapseNotesCard(notesID){
     }
   }
 }
+
+function loadConsolidate(){
+  parentArticle = document.getElementById("Article2");
+  console.log("Loading Consolidate");
+  console.log(parentArticle);
+  parentArticle.children[0].children[0].src = "https://cdn.runescape.com/assets/img/external/oldschool/2023/newsposts/2023-02-23/THUMBNAIL-ForestryUpdate.png";
+  parentArticle.children[0].children[1].children[0].textContent = "An Update on Forestry";
+  parentArticle.children[0].children[1].children[1].textContent = "Community 23 February 2023";
+  parentArticle.children[0].children[1].children[2].textContent = "Check out what we've changed regarding your feedback and the poll questions before March 1st! Read More...";
+  parentArticle.setAttribute('href', "https://secure.runescape.com/m=news/an-update-on-forestry?oldschool=1");
+
+  console.log("UPDATED CONSOLIDATE");
+  console.log(parentArticle);
+}
