@@ -768,7 +768,9 @@ code{
 .btn-OSRS{
     padding: 5px 7px;
     background-image: url(../images/OSRSButton.gif);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     color: var(--color-heading);
 }
 

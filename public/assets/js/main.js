@@ -66,16 +66,24 @@ function collapseNotesCard(notesID){
   }
 }
 
+// Function to load all relevant information for the Consolidate Web Application
+// Relevant information includes Retreiving and Inserting OSRS 5 Main Page News Articles
 function loadConsolidate(){
-  parentArticle = document.getElementById("Article2");
-  console.log("Loading Consolidate");
-  console.log(parentArticle);
-  parentArticle.children[0].children[0].src = "https://cdn.runescape.com/assets/img/external/oldschool/2023/newsposts/2023-02-23/THUMBNAIL-ForestryUpdate.png";
-  parentArticle.children[0].children[1].children[0].textContent = "An Update on Forestry";
-  parentArticle.children[0].children[1].children[1].textContent = "Community 23 February 2023";
-  parentArticle.children[0].children[1].children[2].textContent = "Check out what we've changed regarding your feedback and the poll questions before March 1st! Read More...";
-  parentArticle.setAttribute('href', "https://secure.runescape.com/m=news/an-update-on-forestry?oldschool=1");
+  let parentArticleIDs = new Array("Article1", "Article2", "Article3", "Article4", "Article5");
+  for (let i = 0; i < parentArticleIDs.length; i++){
+    parentArticle = document.getElementById(parentArticleIDs[i]);
+    console.log("Inserting Information for " + parentArticleIDs[i]);
+    parentArticle.children[0].children[0].src = "https://cdn.runescape.com/assets/img/external/oldschool/2023/newsposts/2023-02-23/THUMBNAIL-ForestryUpdate.png";
+    parentArticle.children[0].children[1].children[0].textContent = "An Update on Forestry";
+    parentArticle.children[0].children[1].children[1].textContent = "Community 23 February 2023";
+    parentArticle.children[0].children[1].children[2].textContent = "Check out what we've changed regarding your feedback and the poll questions before March 1st! Read More...";
+    parentArticle.setAttribute('href', "https://secure.runescape.com/m=news/an-update-on-forestry?oldschool=1");
+    console.log("Article after update: " + parentArticle);
+  }
+}
 
-  console.log("UPDATED CONSOLIDATE");
-  console.log(parentArticle);
+// Function to reload the 5 OSRS Main Page News Articles information inside the
+// Consolidate Web Application incase any new articles were posted recently to the OSRS News website
+function reloadOSRSArticles(){
+  console.log("Reload");
 }
