@@ -374,6 +374,7 @@ code{
     height: 100%;
     background: rgb(38, 1, 73);
     transition: all 0.2s;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .8);
 }
 
 .consolidateTwitchText{
@@ -387,10 +388,12 @@ code{
     border-radius: 50%;
     display: block;
     margin: 15px;
+    border: 3px solid rgb(124, 5, 235);
 }
 
 .consolidateTwitchLiveChannels{
     width: 35%;
+    height: 100%;
     margin: 5px;
     border-radius: 10px;
     overflow-y: scroll;
@@ -430,12 +433,12 @@ code{
     background: rgb(38, 1, 73);
     border-radius: 10px;
     border: 2px solid rgb(38, 1, 73);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .8);
     transition: all 0.2s;
 }
 
 .consolidateTwitchListItem:hover{
     border: 2px solid rgb(165, 70, 255);
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 1);
     transition: all 0.2s;
 }
 
