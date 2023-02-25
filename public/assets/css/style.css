@@ -315,6 +315,151 @@ code{
     transition: all 0.4s;
 }
 
+.consolidateTwitch{
+    height: 60vh;
+    background: linear-gradient(rgba(40, 25, 68, 0.9), rgba(40, 25, 68, 0.9)), url(../images/TwitchBackground.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.consolidateTwitchTop{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.consolidateTwitchTop>h2{
+    margin-right: auto;
+    margin-left: 0;
+}
+
+.consolidateTwitchTop>ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.consolidateTwitchTop>ul>li:not(:last-child){
+    margin-right: 7px;
+}
+
+.consolidateTwitchTop>ul>li>button>i{
+    font-size: 24px;
+}
+
+.consolidateTwitchPlayer{
+    height: 31vh;
+    margin: 5px;
+}
+
+.consolidateTwitchPlayer>iframe{
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, .8);
+}
+
+.consolidateTwitchAboutWrapper{
+    display: flex;
+    height: 20vh;
+    width: 100%;
+}
+.consolidateTwitchProfile{
+    width: 65%;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background: rgb(38, 1, 73);
+    transition: all 0.2s;
+}
+
+.consolidateTwitchText{
+    display: flex;
+    flex-direction: row;
+}
+
+#consolidateTwitchLiveProfilePicture{
+    height: 128px;
+    width: 128px;
+    border-radius: 50%;
+    display: block;
+    margin: 15px;
+}
+
+.consolidateTwitchLiveChannels{
+    width: 35%;
+    margin: 5px;
+    border-radius: 10px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.consolidateOSRSBody::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+.consolidateTwitchLiveChannels>ul{
+    padding: 0px;
+}
+
+.consolidateTwitchLiveChannels>ul>li{
+    margin-right: 3px;
+}
+
+.consolidateTwitchLiveChannels>ul>li:not(:last-child){
+    margin-bottom: 5px;
+}
+
+#consolidateTwitchLiveProfilePictureList{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin: 5px;
+    border: 2px solid rgb(38, 1, 73);
+    transition: all 0.2s;
+}
+
+.consolidateTwitchListItem{
+    display: flex;
+    align-items: center;
+    background: rgb(38, 1, 73);
+    border-radius: 10px;
+    border: 2px solid rgb(38, 1, 73);
+    transition: all 0.2s;
+}
+
+.consolidateTwitchListItem:hover{
+    border: 2px solid rgb(165, 70, 255);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 1);
+    transition: all 0.2s;
+}
+
+.consolidateTwitchListItem>div>h6{
+    transition: all 0.2s;
+}
+
+.consolidateTwitchListItem:hover>div>h6{
+    color: rgb(177, 94, 255);
+    transition: all 0.2s;
+}
+
+.consolidateTwitchListItem:hover>div>#consolidateTwitchLiveProfilePictureList{
+    border-color: rgb(165, 70, 255);
+    transition: all 0.2s;
+}
+
+.consolidateTwitchListText{
+    padding: 5px;
+}
+
+#consolidateTwitchLiveProfileName{
+    margin: 0px;
+}
 
 /* CONSOLIDATE END */
 
@@ -778,6 +923,16 @@ code{
     background-color: var(--color-brand2);
     color: #90c040;
     border-color: #90c040;
+}
+
+.btn-Twitch{
+    background-color: rgb(124, 5, 235);
+    color: var(--color-body);
+}
+
+.btn-Twitch:hover{
+    background-color: rgb(38, 1, 73);
+    color: rgb(165, 70, 255);
 }
 
 /* BUTTON END */

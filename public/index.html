@@ -1162,10 +1162,103 @@
                     <!-- Consolidate End -->
 
                     <!-- Cook Book -->
-                    <div class="col-md-5 pb-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
-                        <div class="webAppPanel cookBookPanel p-4 rounded-4 shadow-effect"
-                            onclick="location.href='cookBook.html';" style="cursor:pointer">
-                            <h2 class="mt-4 mb-2 text-center">Cook Book</h2>
+                    <div class="col-md-7 pb-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                        <div class="consolidateTwitch p-2 rounded-4">
+                            <div class="consolidateTwitchTop m-2">
+                                <h2 class="">Live Twitch Channels</h2>
+                                <ul>
+                                    <li>
+                                        <a class="btn btn-Twitch" href="https://www.twitch.tv/directory/all"
+                                            target="_blank" rel="noopener noreferrer">
+                                            Visit Twitch <i class="las la-external-link-alt"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="consolidateTwitchPlayer" id="consolidateTwitchEmbeddedPlayer"></div>
+                            <div class="consolidateTwitchAboutWrapper">
+                                <a class="consolidateTwitchProfile">
+                                    <div>
+                                        <img id="consolidateTwitchLiveProfilePicture"
+                                            src="./assets/images/blarney_front_250.jpg" alt="">
+                                    </div>
+                                    <div>
+                                        <h4 id="consolidateTwitchLiveProfileName" class="consolidateTwitchText">Jd7Live
+                                        </h4>
+                                        <h5 id="consolidateTwitchLiveStreamTitle" class="consolidateTwitchText">Stream
+                                            Title</span>
+                                            <h6 id="consolidateTwitchLiveStreamGame" class="consolidateTwitchText">
+                                                OldSchool Runescape</h6>
+                                            <p id="consolidateTwitchLiveProfileDescription"
+                                                class="consolidateTwitchText">
+
+                                            </p>
+                                    </div>
+                                </a>
+                                <div class="consolidateTwitchLiveChannels">
+                                    <ul>
+                                        <li class="consolidateTwitchListItem">
+                                            <div>
+                                                <img id="consolidateTwitchLiveProfilePictureList"
+                                                    src="./assets/images/blarney_front_250.jpg" alt="">
+                                            </div>
+                                            <div class="consolidateTwitchListText">
+                                                <h6 id="consolidateTwitchLiveProfileName">Jd7Live</h6>
+                                                <span id="consolidateTwitchLiveGame">OldSchool Runescape</span>
+                                            </div>
+                                        </li>
+                                        <li class="consolidateTwitchListItem">
+                                            <div>
+                                                <img id="consolidateTwitchLiveProfilePictureList"
+                                                    src="./assets/images/blarney_front_250.jpg" alt="">
+                                            </div>
+                                            <div class="consolidateTwitchListText">
+                                                <h6 id="consolidateTwitchLiveProfileName">Jd7Live</h6>
+                                                <span id="consolidateTwitchLiveGame">OldSchool Runescape</span>
+                                            </div>
+                                        </li>
+                                        <li class="consolidateTwitchListItem">
+                                            <div>
+                                                <img id="consolidateTwitchLiveProfilePictureList"
+                                                    src="./assets/images/blarney_front_250.jpg" alt="">
+                                            </div>
+                                            <div class="consolidateTwitchListText">
+                                                <h6 id="consolidateTwitchLiveProfileName">Jd7Live</h6>
+                                                <span id="consolidateTwitchLiveGame">OldSchool Runescape</span>
+                                            </div>
+                                        </li>
+                                        <li class="consolidateTwitchListItem">
+                                            <div>
+                                                <img id="consolidateTwitchLiveProfilePictureList"
+                                                    src="./assets/images/blarney_front_250.jpg" alt="">
+                                            </div>
+                                            <div class="consolidateTwitchListText">
+                                                <h6 id="consolidateTwitchLiveProfileName">Jd7Live</h6>
+                                                <span id="consolidateTwitchLiveGame">OldSchool Runescape</span>
+                                            </div>
+                                        </li>
+                                        <li class="consolidateTwitchListItem">
+                                            <div>
+                                                <img id="consolidateTwitchLiveProfilePictureList"
+                                                    src="./assets/images/blarney_front_250.jpg" alt="">
+                                            </div>
+                                            <div class="consolidateTwitchListText">
+                                                <h6 id="consolidateTwitchLiveProfileName">Jd7Live</h6>
+                                                <span id="consolidateTwitchLiveGame">OldSchool Runescape</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cook Book End -->
+
+                    <!-- Cook Book -->
+                    <div class="col-md-12 pb-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                        <div class="consolidateYoutube cookBookPanel p-4 rounded-4 shadow-effect">
+                            <h2 class="mt-4 mb-2 text-center">YouTube Videos</h2>
                             <p>Find easy recipes and automatically plan your week night meals</p>
                             <div class="webApp-bottom-box">
                                 <a href="cookBook.html" class="link-custom">Visit Web App <i
@@ -1529,6 +1622,18 @@
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
+    </script>
+    <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+    <script type="text/javascript">
+        var options = {
+            channel: "piratepati",
+            height: "100%",
+            width: "100%",
+            // Only needed if this page is going to be embedded on other websites
+            parent: ["embed.example.com", "othersite.example.com"]
+        };
+        var player = new Twitch.Player("consolidateTwitchEmbeddedPlayer", options);
+        player.setVolume(1);
     </script>
 </body>
 
