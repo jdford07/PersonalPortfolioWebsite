@@ -67,19 +67,44 @@ function collapseNotesCard(notesID){
 }
 
 // Function to load all relevant information for the Consolidate Web Application
-// Relevant information includes Retreiving and Inserting OSRS 5 Main Page News Articles
 function loadConsolidate(){
+  loadConsolidateOSRS()
+  
+}
+
+
+// Function to retrieve the osrs main page articles via nested async function then take the api result and insert each article into
+// an element on the DOM
+async function loadConsolidateOSRS(){
   let parentArticleIDs = new Array("Article1", "Article2", "Article3", "Article4", "Article5");
+
+  //get osrs main news articles from API
+  apiResult = await loadOSRSMainPageArticles();
+  //console.log("API RESULT"+JSON.stringify(apiResult));
+
+  //Insert each article into the DOM
   for (let i = 0; i < parentArticleIDs.length; i++){
     parentArticle = document.getElementById(parentArticleIDs[i]);
     console.log("Inserting Information for " + parentArticleIDs[i]);
-    parentArticle.children[0].children[0].src = "https://cdn.runescape.com/assets/img/external/oldschool/2023/newsposts/2023-02-23/THUMBNAIL-ForestryUpdate.png";
-    parentArticle.children[0].children[1].children[0].textContent = "An Update on Forestry";
-    parentArticle.children[0].children[1].children[1].textContent = "Community 23 February 2023";
-    parentArticle.children[0].children[1].children[2].textContent = "Check out what we've changed regarding your feedback and the poll questions before March 1st! Read More...";
-    parentArticle.setAttribute('href', "https://secure.runescape.com/m=news/an-update-on-forestry?oldschool=1");
+    parentArticle.children[0].children[0].src = apiResult[i].thumbnailUrl;
+    parentArticle.children[0].children[1].children[0].textContent = apiResult[i].articleTitle;
+    parentArticle.children[0].children[1].children[1].textContent = apiResult[i].articleDate;
+    parentArticle.children[0].children[1].children[2].textContent = apiResult[i].articleBody;
+    parentArticle.setAttribute('href', apiResult[i].articleLink);
     console.log("Article after update: " + parentArticle);
   }
+}
+
+// Function to query the AWS EC2 endpoint API for the 5 current OSRS main page articles
+async function loadOSRSMainPageArticles(){
+  var requestOptions = {
+    method: 'GET',
+    redirect: 'follow'
+  };
+
+  let apiResponse = await fetch("https://www.webapps.jdfordjr.com/api/v1/MainNewsArticles", requestOptions);
+  let jsonResponse = await apiResponse.json();
+  return jsonResponse;
 }
 
 // Function to reload the 5 OSRS Main Page News Articles information inside the
