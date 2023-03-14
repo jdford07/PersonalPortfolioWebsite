@@ -740,6 +740,22 @@ code{
 .about-icon:hover{
     box-shadow: 2px 2px 3px 1px rgb(0,0,0);
 }
+
+.carousel-item{
+    height: 400px;
+    position: relative;
+}
+
+.carousel-item>img{
+    position:absolute;
+    top:43%;
+    left: 0;
+    right: 0;
+    -webkit-transform: translateY(-45%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
 /* ABOUT ME END */
 
 /* MODALS */
