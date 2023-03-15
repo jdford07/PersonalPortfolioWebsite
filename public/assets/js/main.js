@@ -66,9 +66,57 @@ function collapseNotesCard(notesID){
   }
 }
 
+// Function to add the active class to the clicked li element and remove the active class from any other li elements 
+// then function call to update main twitch profile
+function makeTwitchElementActive(clickedElement){
+  let liElements = document.getElementsByClassName("consolidateTwitchListItem");
+
+  //find which element(s) have active class, remove active class
+  for(let i = 0; i < liElements.length; i++){
+    let classList = liElements[i].className.split(" ");
+    activeIndex = classList.indexOf("active");
+
+    if(activeIndex > -1){
+      classList.splice(activeIndex, 1);
+    }
+
+    liElements[i].className = classList.join(" ")
+  }
+
+  //add active class to clicked element
+  clickedElement.className += " active"
+
+  updateMainTwitchProfile();
+}
+
+
+// Function to update the main twitch profile element that displays more in-depth information then call function to update the twitch player
+// to reflect the profile change
+function updateMainTwitchProfile(){
+  let twitchProfileElement = document.getElementsByClassName("consolidateTwitchProfile");
+
+  // Change main twitch profile element attributes
+  twitchProfileElement[0].children[0].children[0].src = clickedElement.children[0].children[0].src //profile picture
+  twitchProfileElement[0].children[1].children[0].textContent = clickedElement.children[1].children[0].textContent //channel name
+  //twitchProfileElement[0].children[1].children[1].textContent = //stream title
+  twitchProfileElement[0].children[1].children[2].textContent = clickedElement.children[1].children[1].textContent // game name
+  //twitchProfileElement[0].children[1].children[3].textContent = //channel description
+
+  changeTwitchPlayer();
+}
+
+// Function to update the twitch player settings to the current main twitch profile channel
+function changeTwitchPlayer(){
+  let playerChannelName = document.querySelector("#consolidateTwitchLiveProfileName");
+
+  player.setChannel(playerChannelName.textContent.trim());
+  player.setVolume(1);
+}
+
 // Function to load all relevant information for the Consolidate Web Application
 function loadConsolidate(){
   loadConsolidateOSRS()
+  loadConsolidateTwitch()
   
 }
 
@@ -95,6 +143,7 @@ async function loadConsolidateOSRS(){
   }
 }
 
+
 // Function to query the AWS EC2 endpoint API for the 5 current OSRS main page articles
 async function loadOSRSMainPageArticles(){
   var requestOptions = {
@@ -107,8 +156,15 @@ async function loadOSRSMainPageArticles(){
   return jsonResponse;
 }
 
+
 // Function to reload the 5 OSRS Main Page News Articles information inside the
 // Consolidate Web Application incase any new articles were posted recently to the OSRS News website
 function reloadOSRSArticles(){
   console.log("Reload");
+  loadConsolidateOSRS();
+}
+
+
+function loadConsolidateTwitch(){
+
 }
