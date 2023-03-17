@@ -86,13 +86,13 @@ function makeTwitchElementActive(clickedElement){
   //add active class to clicked element
   clickedElement.className += " active"
 
-  updateMainTwitchProfile();
+  updateMainTwitchProfile(clickedElement);
 }
 
 
 // Function to update the main twitch profile element that displays more in-depth information then call function to update the twitch player
 // to reflect the profile change
-function updateMainTwitchProfile(){
+function updateMainTwitchProfile(clickedElement){
   let twitchProfileElement = document.getElementsByClassName("consolidateTwitchProfile");
 
   // Change main twitch profile element attributes
@@ -166,5 +166,10 @@ function reloadOSRSArticles(){
 
 
 function loadConsolidateTwitch(){
+  // twitchClientID = "51mzuyafc05ui4265nkbcz4tkepml2"
+  // twitchClientSecret = "jommf4avrsi7tgnx6exi5emhjuwwjg"
+  let twitchProfileElement = document.getElementById("twitchFirstItem");
+  updateMainTwitchProfile(twitchProfileElement);
+
 
 }
