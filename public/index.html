@@ -1078,11 +1078,15 @@
                 <div class="row">
                     <div class="lead col-md-10 pb-5 d-flex flex-column align-items-center" data-aos="zoom-in"
                         data-aos-delay="100" data-aos-duration="1000">
-                        <p class="text-center">Welcome to my first integrated Web Application: <b>Consolidate</b>!</p>
+                        <p class="text-center">Welcome to my first integrated Web Application: <b
+                                class="about-bold">Consolidate</b>!</p>
                         <p class="text-center">This is my one stop shop for information that I personally care about.
-                            The Twitch and YouTube sections are still under development but I wanted to share my
-                            progress! Currently, the Twitch information is static but it will very soon populate
-                            dynamically.</p>
+                            The YouTube section is still under development but I wanted to share my
+                            progress!</p>
+                        <p class="text-center"> Currently, the Twitch information is static but, if you authenticate
+                            your Twitch account by clicking the "Connect Twitch" button, you will see all of the
+                            channels you follow that are currently live.
+                        </p>
                     </div>
 
                     <!-- Consolidate OSRS Start -->
@@ -1176,29 +1180,39 @@
                                             target="_blank" rel="noopener noreferrer">
                                             Visit Twitch <i class="las la-external-link-alt"></i>
                                         </a>
+                                        <a class="btn btn-Twitch" onclick="authorizeTwitchAccount()">
+                                            Connect Twitch <i class="las la-external-link-alt"></i>
+                                        </a>
                                     </li>
                                 </ul>
                             </div>
                             <div class="consolidateTwitchPlayer" id="consolidateTwitchEmbeddedPlayer"></div>
                             <div class="consolidateTwitchAboutWrapper">
-                                <a class="consolidateTwitchProfile">
+                                <div class="consolidateTwitchProfile">
                                     <div>
                                         <img id="consolidateTwitchLiveProfilePicture" src="" alt="">
+                                        <ul>
+                                            <!-- <li id="consolidateTwitchProfileTimer" class="text-center">
+                                                <i class="las la-stopwatch"></i>
+                                                <span id="twitchTimer">Not Live</span>
+                                            </li> -->
+                                            <li id="consolidateTwitchProfileViewerCount" class="text-center">
+                                                <i class="las la-user"></i>
+                                                <span id="twitchViewerCount">Not Live</span>
+                                            </li>
+                                        </ul>
                                     </div>
                                     <div>
-                                        <h4 id="consolidateTwitchLiveProfileName" class="consolidateTwitchText">Twitch
-                                        </h4>
-                                        <h5 id="consolidateTwitchLiveStreamTitle" class="consolidateTwitchText"></h5>
+                                        <h3 id="consolidateTwitchLiveProfileName" class="consolidateTwitchText">Twitch
+                                        </h3>
                                         <h6 id="consolidateTwitchLiveStreamGame" class="consolidateTwitchText"></h6>
-                                        <p id="consolidateTwitchLiveProfileDescription" class="consolidateTwitchText">
-
-                                        </p>
+                                        <p id="consolidateTwitchLiveStreamTitle" class="consolidateTwitchText"></p>
                                     </div>
-                                </a>
+                                </div>
                                 <div class="consolidateTwitchLiveChannels">
-                                    <ul>
+                                    <ul id="consolidateTwitchLiveChannelsList">
                                         <li id="twitchFirstItem" class="consolidateTwitchListItem active"
-                                            onclick="makeTwitchElementActive(this)">
+                                            onclick="makeTwitchElementActive(this, 'default')">
                                             <div>
                                                 <img id="consolidateTwitchLiveProfilePictureList"
                                                     src="https://static-cdn.jtvnw.net/jtv_user_pictures/ed949a09-b742-4684-9b3d-8af1978e1ff0-profile_image-300x300.png"
@@ -1209,18 +1223,8 @@
                                                 <span id="consolidateTwitchLiveGame">Software Development</span>
                                             </div>
                                         </li>
-                                        <li class="consolidateTwitchListItem" onclick="makeTwitchElementActive(this)">
-                                            <div>
-                                                <img id="consolidateTwitchLiveProfilePictureList"
-                                                    src="https://static-cdn.jtvnw.net/jtv_user_pictures/b0aty-profile_image-e38e8afc1f3f8fd5-300x300.png"
-                                                    alt="">
-                                            </div>
-                                            <div class="consolidateTwitchListText">
-                                                <h6 id="consolidateTwitchLiveProfileName">B0aty</h6>
-                                                <span id="consolidateTwitchLiveGame">OldSchool Runescape</span>
-                                            </div>
-                                        </li>
-                                        <li class="consolidateTwitchListItem" onclick="makeTwitchElementActive(this)">
+                                        <li class="consolidateTwitchListItem"
+                                            onclick="makeTwitchElementActive(this, 'default')">
                                             <div>
                                                 <img id="consolidateTwitchLiveProfilePictureList"
                                                     src="https://static-cdn.jtvnw.net/jtv_user_pictures/dba6688f-a2ea-47b5-8624-af880b92db72-profile_image-300x300.png"
@@ -1231,7 +1235,8 @@
                                                 <span id="consolidateTwitchLiveGame">OldSchool Runescape</span>
                                             </div>
                                         </li>
-                                        <li class="consolidateTwitchListItem" onclick="makeTwitchElementActive(this)">
+                                        <li class="consolidateTwitchListItem"
+                                            onclick="makeTwitchElementActive(this, 'default')">
                                             <div>
                                                 <img id="consolidateTwitchLiveProfilePictureList"
                                                     src="https://static-cdn.jtvnw.net/jtv_user_pictures/6e593335-c2f3-4227-bc0d-34634472cf0f-profile_image-300x300.png"
@@ -1242,7 +1247,8 @@
                                                 <span id="consolidateTwitchLiveGame">Variety</span>
                                             </div>
                                         </li>
-                                        <li class="consolidateTwitchListItem" onclick="makeTwitchElementActive(this)">
+                                        <li class="consolidateTwitchListItem"
+                                            onclick="makeTwitchElementActive(this, 'default')">
                                             <div>
                                                 <img id="consolidateTwitchLiveProfilePictureList"
                                                     src="https://static-cdn.jtvnw.net/jtv_user_pictures/b8e9e828-e391-4db8-8f0d-ab217e53f3bb-profile_image-300x300.png"
@@ -1251,6 +1257,18 @@
                                             <div class="consolidateTwitchListText">
                                                 <h6 id="consolidateTwitchLiveProfileName">Ottomated</h6>
                                                 <span id="consolidateTwitchLiveGame">Software Development</span>
+                                            </div>
+                                        </li>
+                                        <li class="consolidateTwitchListItem"
+                                            onclick="makeTwitchElementActive(this, 'default')">
+                                            <div>
+                                                <img id="consolidateTwitchLiveProfilePictureList"
+                                                    src="https://static-cdn.jtvnw.net/jtv_user_pictures/b0aty-profile_image-e38e8afc1f3f8fd5-300x300.png"
+                                                    alt="">
+                                            </div>
+                                            <div class="consolidateTwitchListText">
+                                                <h6 id="consolidateTwitchLiveProfileName">B0aty</h6>
+                                                <span id="consolidateTwitchLiveGame">OldSchool Runescape</span>
                                             </div>
                                         </li>
                                     </ul>

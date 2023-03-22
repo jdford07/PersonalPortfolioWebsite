@@ -377,6 +377,15 @@ code{
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, .8);
 }
 
+.consolidateTwitchProfile>div>ul{
+    padding: 0;
+}
+
+.consolidateTwitchProfile>div>ul>li>i{
+    font-size: 20px;
+    color: var(--color-brand);
+}
+
 .consolidateTwitchText{
     display: flex;
     flex-direction: row;
@@ -389,6 +398,10 @@ code{
     display: block;
     margin: 15px;
     border: 3px solid rgb(124, 5, 235);
+}
+
+#consolidateTwitchLiveStreamTitle{
+    padding-right: 10px;
 }
 
 .consolidateTwitchLiveChannels{
