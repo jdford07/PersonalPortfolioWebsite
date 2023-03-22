@@ -251,7 +251,8 @@ function loadConsolidateTwitch(){
 // Function, when clicked, to open a new window and execute the Twitch Implicit Grant Flow then extract and locally store the returned user auth token
 function authorizeTwitchAccount(){
   const twitchClientID = "51mzuyafc05ui4265nkbcz4tkepml2";
-  const twitchRedirectURL = "http://localhost:81/PortfolioWebsite/public/twitchRedirect.html";
+  //const twitchRedirectURL = "http://localhost:81/PortfolioWebsite/public/twitchRedirect.html";
+  const twitchRedirectURL = "https://www.jdfordjr.com/twitchRedirect.html";
   let twitchURL = `https://id.twitch.tv/oauth2/authorize?response_type=token&client_id=${twitchClientID}&redirect_uri=${twitchRedirectURL}&scope=user%3Aread%3Afollows&state=c3ab8aa609ea11e793ae92361f002671`;
 
   // Create new Popup for all of Twitch OAuth redirects
